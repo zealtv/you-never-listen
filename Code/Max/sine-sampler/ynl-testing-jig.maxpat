@@ -73,16 +73,15 @@
 ,
 					"outlettype" : [ "signal", "list" ],
 					"patching_rect" : [ 328.0, 487.0, 139.0, 22.0 ],
-					"presentation_linecount" : 2,
 					"rnboattrcache" : 					{
-						"attack" : 						{
-							"label" : "attack",
+						"release" : 						{
+							"label" : "release",
 							"isEnum" : 0,
 							"parsestring" : ""
 						}
 ,
-						"release" : 						{
-							"label" : "release",
+						"attack" : 						{
+							"label" : "attack",
 							"isEnum" : 0,
 							"parsestring" : ""
 						}
@@ -294,18 +293,6 @@
 					"outlettype" : [ "signal", "list" ],
 					"patching_rect" : [ 620.0, 574.5, 234.0, 22.0 ],
 					"rnboattrcache" : 					{
-						"lfotype" : 						{
-							"label" : "lfotype",
-							"isEnum" : 1,
-							"parsestring" : "\"sine\" \"ramp\" \"square\" \"rect\" \"tri\""
-						}
-,
-						"on" : 						{
-							"label" : "on",
-							"isEnum" : 1,
-							"parsestring" : "\"false\" \"true\""
-						}
-,
 						"jitter" : 						{
 							"label" : "jitter",
 							"isEnum" : 0,
@@ -322,6 +309,18 @@
 							"label" : "pulsewidth",
 							"isEnum" : 0,
 							"parsestring" : ""
+						}
+,
+						"lfotype" : 						{
+							"label" : "lfotype",
+							"isEnum" : 1,
+							"parsestring" : "\"sine\" \"ramp\" \"square\" \"rect\" \"tri\""
+						}
+,
+						"on" : 						{
+							"label" : "on",
+							"isEnum" : 1,
+							"parsestring" : "\"false\" \"true\""
 						}
 
 					}
@@ -1032,90 +1031,75 @@
 					"autosave" : 1,
 					"id" : "obj-63",
 					"inletInfo" : 					{
-						"IOInfo" : [ 							{
-								"type" : "signal",
-								"index" : 1,
-								"tag" : "in1",
-								"comment" : ""
-							}
- ]
+						"IOInfo" : [  ]
 					}
 ,
 					"maxclass" : "newobj",
 					"numinlets" : 1,
-					"numoutlets" : 3,
+					"numoutlets" : 1,
 					"outletInfo" : 					{
-						"IOInfo" : [ 							{
-								"type" : "signal",
-								"index" : 1,
-								"tag" : "out1",
-								"comment" : ""
-							}
-, 							{
-								"type" : "signal",
-								"index" : 2,
-								"tag" : "out2",
-								"comment" : ""
-							}
- ]
+						"IOInfo" : [  ]
 					}
 ,
-					"outlettype" : [ "signal", "signal", "list" ],
+					"outlettype" : [ "list" ],
+					"patcher" : 					{
+						"fileversion" : 1,
+						"appversion" : 						{
+							"major" : 8,
+							"minor" : 5,
+							"revision" : 6,
+							"architecture" : "x64",
+							"modernui" : 1
+						}
+,
+						"classnamespace" : "rnbo",
+						"rect" : [ 59.0, 118.0, 640.0, 480.0 ],
+						"bglocked" : 0,
+						"openinpresentation" : 0,
+						"default_fontsize" : 12.0,
+						"default_fontface" : 0,
+						"default_fontname" : "Lato",
+						"gridonopen" : 1,
+						"gridsize" : [ 15.0, 15.0 ],
+						"gridsnaponopen" : 1,
+						"objectsnaponopen" : 1,
+						"statusbarvisible" : 2,
+						"toolbarvisible" : 1,
+						"lefttoolbarpinned" : 0,
+						"toptoolbarpinned" : 0,
+						"righttoolbarpinned" : 0,
+						"bottomtoolbarpinned" : 0,
+						"toolbars_unpinned_last_save" : 0,
+						"tallnewobj" : 0,
+						"boxanimatetime" : 200,
+						"enablehscroll" : 1,
+						"enablevscroll" : 1,
+						"devicewidth" : 0.0,
+						"description" : "",
+						"digest" : "",
+						"tags" : "",
+						"style" : "",
+						"subpatcher_template" : "",
+						"assistshowspatchername" : 0,
+						"title" : "untitled",
+						"boxes" : [  ],
+						"lines" : [  ],
+						"default_bgcolor" : [ 0.031372549019608, 0.125490196078431, 0.211764705882353, 1.0 ],
+						"color" : [ 0.929412, 0.929412, 0.352941, 1.0 ],
+						"elementcolor" : [ 0.357540726661682, 0.515565991401672, 0.861786782741547, 1.0 ],
+						"accentcolor" : [ 0.343034118413925, 0.506230533123016, 0.86220508813858, 1.0 ],
+						"stripecolor" : [ 0.258338063955307, 0.352425158023834, 0.511919498443604, 1.0 ],
+						"bgfillcolor_type" : "color",
+						"bgfillcolor_color" : [ 0.031372549019608, 0.125490196078431, 0.211764705882353, 1.0 ],
+						"bgfillcolor_color1" : [ 0.031372549019608, 0.125490196078431, 0.211764705882353, 1.0 ],
+						"bgfillcolor_color2" : [ 0.263682, 0.004541, 0.038797, 1.0 ],
+						"bgfillcolor_angle" : 270.0,
+						"bgfillcolor_proportion" : 0.39,
+						"bgfillcolor_autogradient" : 0.0
+					}
+,
 					"patching_rect" : [ 805.0, 965.0, 219.0, 22.0 ],
 					"rnboattrcache" : 					{
-						"reverb/inbandwidth" : 						{
-							"label" : "reverb/inbandwidth",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"reverb/indiffusion1" : 						{
-							"label" : "reverb/indiffusion1",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"reverb/predelay" : 						{
-							"label" : "reverb/predelay",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"reverb/indiffusion2" : 						{
-							"label" : "reverb/indiffusion2",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"reverb/decay" : 						{
-							"label" : "reverb/decay",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"reverb/decaydiffusion1" : 						{
-							"label" : "reverb/decaydiffusion1",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"reverb/decaydiffusion2" : 						{
-							"label" : "reverb/decaydiffusion2",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"reverb/damping" : 						{
-							"label" : "reverb/damping",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"reverb/drywet" : 						{
-							"label" : "reverb/drywet",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
 
 					}
 ,
@@ -1146,43 +1130,7 @@
 						"subtype" : "Undefined",
 						"embed" : 1,
 						"snapshot" : 						{
-							"reverb/drywet" : 							{
-								"value" : 0.337
-							}
-,
-							"reverb/decaydiffusion2" : 							{
-								"value" : 0.5
-							}
-,
-							"reverb/indiffusion2" : 							{
-								"value" : 0.625
-							}
-,
-							"reverb/predelay" : 							{
-								"value" : 0.13
-							}
-,
-							"reverb/damping" : 							{
-								"value" : 0.92
-							}
-,
-							"reverb/decay" : 							{
-								"value" : 0.991
-							}
-,
-							"reverb/indiffusion1" : 							{
-								"value" : 0.75
-							}
-,
-							"reverb/inbandwidth" : 							{
-								"value" : 0.5
-							}
-,
-							"reverb/decaydiffusion1" : 							{
-								"value" : 0.7
-							}
-,
-							"__presetid" : "fx.reverb.rnbopat"
+							"__presetid" : "c8f9e97d-6be9-11ee-a97d-02345f76cc60"
 						}
 ,
 						"snapshotlist" : 						{
@@ -1191,57 +1139,21 @@
 									"filetype" : "C74Snapshot",
 									"version" : 2,
 									"minorversion" : 0,
-									"name" : "fx.reverb.rnbopat",
-									"origin" : "fx.reverb.rnbopat",
+									"name" : "untitled",
+									"origin" : "c8f9e97d-6be9-11ee-a97d-02345f76cc60",
 									"type" : "rnbo",
 									"subtype" : "",
-									"embed" : 0,
+									"embed" : 1,
 									"snapshot" : 									{
-										"reverb/drywet" : 										{
-											"value" : 0.337
-										}
-,
-										"reverb/decaydiffusion2" : 										{
-											"value" : 0.5
-										}
-,
-										"reverb/indiffusion2" : 										{
-											"value" : 0.625
-										}
-,
-										"reverb/predelay" : 										{
-											"value" : 0.13
-										}
-,
-										"reverb/damping" : 										{
-											"value" : 0.92
-										}
-,
-										"reverb/decay" : 										{
-											"value" : 0.991
-										}
-,
-										"reverb/indiffusion1" : 										{
-											"value" : 0.75
-										}
-,
-										"reverb/inbandwidth" : 										{
-											"value" : 0.5
-										}
-,
-										"reverb/decaydiffusion1" : 										{
-											"value" : 0.7
-										}
-,
-										"__presetid" : "fx.reverb.rnbopat"
+										"__presetid" : "c8f9e97d-6be9-11ee-a97d-02345f76cc60"
 									}
 ,
 									"fileref" : 									{
-										"name" : "fx.reverb.rnbopat",
-										"filename" : "fx.reverb.rnbopat.maxsnap",
+										"name" : "untitled",
+										"filename" : "untitled_20231016_1.maxsnap",
 										"filepath" : "~/Documents/Max 8/Snapshots",
 										"filepos" : -1,
-										"snapshotfileid" : "b4e0dddc1ca6c5c742d0f850a109550f"
+										"snapshotfileid" : "41aa90dc67e619c0010e484818dcab41"
 									}
 
 								}
@@ -1814,14 +1726,26 @@
 					"outlettype" : [ "signal", "signal", "list" ],
 					"patching_rect" : [ 315.0, 805.0, 132.0, 24.0 ],
 					"rnboattrcache" : 					{
-						"diff" : 						{
-							"label" : "diff",
+						"mix" : 						{
+							"label" : "mix",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"jitter" : 						{
+							"label" : "jitter",
 							"isEnum" : 0,
 							"parsestring" : ""
 						}
 ,
 						"size" : 						{
 							"label" : "size",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"diff" : 						{
+							"label" : "diff",
 							"isEnum" : 0,
 							"parsestring" : ""
 						}
@@ -1834,18 +1758,6 @@
 ,
 						"decay" : 						{
 							"label" : "decay",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"mix" : 						{
-							"label" : "mix",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"jitter" : 						{
-							"label" : "jitter",
 							"isEnum" : 0,
 							"parsestring" : ""
 						}
@@ -3083,14 +2995,20 @@
 					"outlettype" : [ "signal", "list" ],
 					"patching_rect" : [ 328.0, 370.5, 171.0, 22.0 ],
 					"rnboattrcache" : 					{
-						"attack" : 						{
-							"label" : "attack",
+						"lfo-depth" : 						{
+							"label" : "lfo-depth",
 							"isEnum" : 0,
 							"parsestring" : ""
 						}
 ,
-						"lfo-depth" : 						{
-							"label" : "lfo-depth",
+						"lfo-freq" : 						{
+							"label" : "lfo-freq",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"filter-q" : 						{
+							"label" : "filter-q",
 							"isEnum" : 0,
 							"parsestring" : ""
 						}
@@ -3101,26 +3019,26 @@
 							"parsestring" : ""
 						}
 ,
+						"filter-range" : 						{
+							"label" : "filter-range",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"noise" : 						{
+							"label" : "noise",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
 						"pitch-decay" : 						{
 							"label" : "pitch-decay",
 							"isEnum" : 0,
 							"parsestring" : ""
 						}
 ,
-						"decay" : 						{
-							"label" : "decay",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"detune" : 						{
-							"label" : "detune",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"filter-q" : 						{
-							"label" : "filter-q",
+						"boost" : 						{
+							"label" : "boost",
 							"isEnum" : 0,
 							"parsestring" : ""
 						}
@@ -3137,14 +3055,26 @@
 							"parsestring" : ""
 						}
 ,
-						"noise" : 						{
-							"label" : "noise",
+						"center-frequency" : 						{
+							"label" : "center-frequency",
 							"isEnum" : 0,
 							"parsestring" : ""
 						}
 ,
-						"gain" : 						{
-							"label" : "gain",
+						"decay" : 						{
+							"label" : "decay",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"attack" : 						{
+							"label" : "attack",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"detune" : 						{
+							"label" : "detune",
 							"isEnum" : 0,
 							"parsestring" : ""
 						}
@@ -3155,32 +3085,20 @@
 							"parsestring" : ""
 						}
 ,
-						"lfo-freq" : 						{
-							"label" : "lfo-freq",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"boost" : 						{
-							"label" : "boost",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
 						"filter-rate" : 						{
 							"label" : "filter-rate",
 							"isEnum" : 0,
 							"parsestring" : ""
 						}
 ,
-						"filter-range" : 						{
-							"label" : "filter-range",
+						"gain" : 						{
+							"label" : "gain",
 							"isEnum" : 0,
 							"parsestring" : ""
 						}
 ,
-						"center-frequency" : 						{
-							"label" : "center-frequency",
+						"filter-on" : 						{
+							"label" : "filter-on",
 							"isEnum" : 0,
 							"parsestring" : ""
 						}
@@ -3207,6 +3125,7 @@
 					"saved_object_attributes" : 					{
 						"optimization" : "O1",
 						"parameter_enable" : 1,
+						"polyphony" : 1,
 						"uuid" : "2a17e35b-6706-11ee-a35b-02345f76cc5f"
 					}
 ,
@@ -3221,117 +3140,7 @@
 						"embed" : 1,
 						"snapshot" : 						{
 							"__sps" : 							{
-								"filters" : 								{
-									"__sps" : 									{
-										"hp" : 										{
-
-										}
-,
-										"br" : 										{
-
-										}
-,
-										"bp" : 										{
-
-										}
-,
-										"lp" : 										{
-
-										}
-
-									}
-
-								}
-
-							}
-,
-							"release" : 							{
-								"value" : 50.0
-							}
-,
-							"attack" : 							{
-								"value" : 0.0
-							}
-,
-							"filter-range" : 							{
-								"value" : 0.0
-							}
-,
-							"center-frequency" : 							{
-								"value" : 2201.082236000000194
-							}
-,
-							"noise" : 							{
-								"value" : 0.000000311365245
-							}
-,
-							"lfo-depth" : 							{
-								"value" : 0.0
-							}
-,
-							"decay" : 							{
-								"value" : 270.826215417025708
-							}
-,
-							"lfo-freq" : 							{
-								"value" : 20.0
-							}
-,
-							"__presetid" : "ynl-synth",
-							"detune" : 							{
-								"value" : 0.0
-							}
-,
-							"sustain" : 							{
-								"value" : 0.380595217290789
-							}
-,
-							"pitch-decay" : 							{
-								"value" : 60000.0
-							}
-,
-							"filter-rate" : 							{
-								"value" : 0.160305896902949
-							}
-,
-							"boost" : 							{
-								"value" : 1.0
-							}
-,
-							"filter-q" : 							{
-								"value" : 0.0
-							}
-,
-							"glide" : 							{
-								"value" : 0.0
-							}
-,
-							"gain" : 							{
-								"value" : 1.716535433070867
-							}
-,
-							"filter-mode" : 							{
-								"value" : 1.0
-							}
-,
-							"pitch-start" : 							{
-								"value" : -12.0
-							}
-
-						}
-,
-						"snapshotlist" : 						{
-							"current_snapshot" : 0,
-							"entries" : [ 								{
-									"filetype" : "C74Snapshot",
-									"version" : 2,
-									"minorversion" : 0,
-									"name" : "ynl-synth",
-									"origin" : "ynl-synth",
-									"type" : "rnbo",
-									"subtype" : "",
-									"embed" : 0,
-									"snapshot" : 									{
+								"poly" : [ 									{
 										"__sps" : 										{
 											"filters" : 											{
 												"__sps" : 												{
@@ -3356,6 +3165,132 @@
 											}
 
 										}
+
+									}
+ ]
+							}
+,
+							"release" : 							{
+								"value" : 50.0
+							}
+,
+							"attack" : 							{
+								"value" : 0.0
+							}
+,
+							"center-frequency" : 							{
+								"value" : 122.635185000000007
+							}
+,
+							"noise" : 							{
+								"value" : 0.0
+							}
+,
+							"sustain" : 							{
+								"value" : 1.0
+							}
+,
+							"pitch-decay" : 							{
+								"value" : 0.0
+							}
+,
+							"decay" : 							{
+								"value" : 203.510593992123319
+							}
+,
+							"lfo-freq" : 							{
+								"value" : 0.0
+							}
+,
+							"__presetid" : "ynl-synth",
+							"detune" : 							{
+								"value" : 0.0
+							}
+,
+							"filter-rate" : 							{
+								"value" : 0.0
+							}
+,
+							"boost" : 							{
+								"value" : 0.0
+							}
+,
+							"filter-q" : 							{
+								"value" : 0.99
+							}
+,
+							"glide" : 							{
+								"value" : 0.0
+							}
+,
+							"gain" : 							{
+								"value" : 2.0
+							}
+,
+							"filter-mode" : 							{
+								"value" : 0.0
+							}
+,
+							"pitch-start" : 							{
+								"value" : 0.0
+							}
+,
+							"lfo-depth" : 							{
+								"value" : 0.0
+							}
+,
+							"filter-range" : 							{
+								"value" : 0.0
+							}
+,
+							"filter-on" : 							{
+								"value" : 0.0
+							}
+
+						}
+,
+						"snapshotlist" : 						{
+							"current_snapshot" : 0,
+							"entries" : [ 								{
+									"filetype" : "C74Snapshot",
+									"version" : 2,
+									"minorversion" : 0,
+									"name" : "ynl-synth",
+									"origin" : "ynl-synth",
+									"type" : "rnbo",
+									"subtype" : "",
+									"embed" : 0,
+									"snapshot" : 									{
+										"__sps" : 										{
+											"poly" : [ 												{
+													"__sps" : 													{
+														"filters" : 														{
+															"__sps" : 															{
+																"hp" : 																{
+
+																}
+,
+																"br" : 																{
+
+																}
+,
+																"bp" : 																{
+
+																}
+,
+																"lp" : 																{
+
+																}
+
+															}
+
+														}
+
+													}
+
+												}
+ ]
+										}
 ,
 										"release" : 										{
 											"value" : 50.0
@@ -3365,28 +3300,28 @@
 											"value" : 0.0
 										}
 ,
-										"filter-range" : 										{
-											"value" : 0.0
-										}
-,
 										"center-frequency" : 										{
-											"value" : 2201.082236000000194
+											"value" : 122.635185000000007
 										}
 ,
 										"noise" : 										{
-											"value" : 0.000000311365245
+											"value" : 0.0
 										}
 ,
-										"lfo-depth" : 										{
+										"sustain" : 										{
+											"value" : 1.0
+										}
+,
+										"pitch-decay" : 										{
 											"value" : 0.0
 										}
 ,
 										"decay" : 										{
-											"value" : 270.826215417025708
+											"value" : 203.510593992123319
 										}
 ,
 										"lfo-freq" : 										{
-											"value" : 20.0
+											"value" : 0.0
 										}
 ,
 										"__presetid" : "ynl-synth",
@@ -3394,24 +3329,16 @@
 											"value" : 0.0
 										}
 ,
-										"sustain" : 										{
-											"value" : 0.380595217290789
-										}
-,
-										"pitch-decay" : 										{
-											"value" : 60000.0
-										}
-,
 										"filter-rate" : 										{
-											"value" : 0.160305896902949
+											"value" : 0.0
 										}
 ,
 										"boost" : 										{
-											"value" : 1.0
+											"value" : 0.0
 										}
 ,
 										"filter-q" : 										{
-											"value" : 0.0
+											"value" : 0.99
 										}
 ,
 										"glide" : 										{
@@ -3419,15 +3346,27 @@
 										}
 ,
 										"gain" : 										{
-											"value" : 1.716535433070867
+											"value" : 2.0
 										}
 ,
 										"filter-mode" : 										{
-											"value" : 1.0
+											"value" : 0.0
 										}
 ,
 										"pitch-start" : 										{
-											"value" : -12.0
+											"value" : 0.0
+										}
+,
+										"lfo-depth" : 										{
+											"value" : 0.0
+										}
+,
+										"filter-range" : 										{
+											"value" : 0.0
+										}
+,
+										"filter-on" : 										{
+											"value" : 0.0
 										}
 
 									}
@@ -3592,7 +3531,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 467.5, 574.5, 63.0, 33.0 ],
-					"presentation_linecount" : 2,
 					"text" : "Gain  reduction"
 				}
 
@@ -4004,42 +3942,28 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-75", 1 ],
-					"source" : [ "obj-63", 1 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-75", 0 ],
-					"source" : [ "obj-63", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-63", 0 ],
+					"destination" : [ "obj-63", -1 ],
 					"source" : [ "obj-71", 0 ]
 				}
 
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-63", 0 ],
+					"destination" : [ "obj-63", -1 ],
 					"source" : [ "obj-72", 0 ]
 				}
 
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-63", 0 ],
+					"destination" : [ "obj-63", -1 ],
 					"source" : [ "obj-73", 0 ]
 				}
 
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-63", 0 ],
+					"destination" : [ "obj-63", -1 ],
 					"source" : [ "obj-74", 0 ]
 				}
 
@@ -4100,6 +4024,7 @@
 			"obj-3::obj-173" : [ "Decay[2]", "Decay", 0 ],
 			"obj-3::obj-174" : [ "Attack[1]", "Attack", 0 ],
 			"obj-3::obj-175" : [ "Sustain[1]", "Sustain", 0 ],
+			"obj-3::obj-18" : [ "filter-on", "Filter Enable", 0 ],
 			"obj-3::obj-185" : [ "Boost[1]", "Boost", 0 ],
 			"obj-3::obj-22" : [ "LFO-Freq[3]", "Filter Rate", 0 ],
 			"obj-3::obj-24" : [ "LFO-Depth[3]", "Filter Range", 0 ],
@@ -4296,24 +4221,17 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "fx.reverb.rnbopat",
-				"bootpath" : "~/repos/intermals",
-				"patcherrelativepath" : "../../../../intermals",
-				"type" : "RBOP",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "fx.reverb.rnbopat.maxsnap",
-				"bootpath" : "~/Documents/Max 8/Snapshots",
-				"patcherrelativepath" : "../../../../../Documents/Max 8/Snapshots",
-				"type" : "mx@s",
-				"implicit" : 1
-			}
-, 			{
 				"name" : "peak-limiter-mono.maxsnap",
 				"bootpath" : "~/Documents/Max 8/Snapshots",
 				"patcherrelativepath" : "../../../../../Documents/Max 8/Snapshots",
 				"type" : "mx@s",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "plate-reverb.rnbopat",
+				"bootpath" : "~/repos/you-never-listen/Code/Max/sine-sampler",
+				"patcherrelativepath" : ".",
+				"type" : "RBOP",
 				"implicit" : 1
 			}
 , 			{
@@ -4401,6 +4319,13 @@
 				"implicit" : 1
 			}
 , 			{
+				"name" : "untitled_20231016_1.maxsnap",
+				"bootpath" : "~/Documents/Max 8/Snapshots",
+				"patcherrelativepath" : "../../../../../Documents/Max 8/Snapshots",
+				"type" : "mx@s",
+				"implicit" : 1
+			}
+, 			{
 				"name" : "ynl-synth.maxsnap",
 				"bootpath" : "~/Documents/Max 8/Snapshots",
 				"patcherrelativepath" : "../../../../../Documents/Max 8/Snapshots",
@@ -4408,7 +4333,7 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "ynl-synth2.rnbopat",
+				"name" : "ynl-synth.rnbopat",
 				"bootpath" : "~/repos/you-never-listen/Code/Max/sine-sampler",
 				"patcherrelativepath" : ".",
 				"type" : "RBOP",
@@ -4416,8 +4341,8 @@
 			}
 , 			{
 				"name" : "ynl.nodesynthGUI.maxpat",
-				"bootpath" : "~/repos/you-never-listen/Max/sine-sampler",
-				"patcherrelativepath" : "../../../Max/sine-sampler",
+				"bootpath" : "~/repos/you-never-listen/Code/Max/sine-sampler",
+				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
