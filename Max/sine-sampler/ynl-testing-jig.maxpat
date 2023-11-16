@@ -133,7 +133,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 256.0, 362.0, 50.0, 22.0 ],
-					"text" : "72 0"
+					"text" : "60 0"
 				}
 
 			}
@@ -2076,7 +2076,7 @@
 					"numoutlets" : 1,
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 37.0, 16.5, 793.0, 161.0 ],
+					"patching_rect" : [ 37.0, 29.5, 793.0, 161.0 ],
 					"viewvisibility" : 1
 				}
 
@@ -2297,6 +2297,24 @@
 							"parsestring" : ""
 						}
 ,
+						"osc-gain" : 						{
+							"label" : "osc-gain",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"pitchlfo-freq" : 						{
+							"label" : "pitchlfo-freq",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"pitchlfo-depth" : 						{
+							"label" : "pitchlfo-depth",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
 						"loop" : 						{
 							"label" : "loop",
 							"isEnum" : 1,
@@ -2347,12 +2365,16 @@
 								"value" : 0.9
 							}
 ,
-							"boost" : 							{
-								"value" : 0.0
+							"attack" : 							{
+								"value" : 10.0
 							}
 ,
-							"center-frequency" : 							{
-								"value" : 20000.0
+							"decay" : 							{
+								"value" : 10.0
+							}
+,
+							"filter-q" : 							{
+								"value" : 0.5
 							}
 ,
 							"__sps" : 							{
@@ -2452,6 +2474,14 @@
 								"value" : 50.0
 							}
 ,
+							"filter-range" : 							{
+								"value" : 0.0
+							}
+,
+							"osc-gain" : 							{
+								"value" : 1.0
+							}
+,
 							"lfo-depth" : 							{
 								"value" : 0.0
 							}
@@ -2462,6 +2492,18 @@
 ,
 							"lfo-freq" : 							{
 								"value" : 0.1
+							}
+,
+							"boost" : 							{
+								"value" : 0.0
+							}
+,
+							"center-frequency" : 							{
+								"value" : 20000.0
+							}
+,
+							"pitchlfo-freq" : 							{
+								"value" : 0.0
 							}
 ,
 							"noise" : 							{
@@ -2476,14 +2518,6 @@
 								"value" : 0.0
 							}
 ,
-							"decay" : 							{
-								"value" : 10.0
-							}
-,
-							"filter-q" : 							{
-								"value" : 0.5
-							}
-,
 							"glide" : 							{
 								"value" : 0.0
 							}
@@ -2493,10 +2527,6 @@
 							}
 ,
 							"pitch-start" : 							{
-								"value" : 0.0
-							}
-,
-							"filter-range" : 							{
 								"value" : 0.0
 							}
 ,
@@ -2513,8 +2543,8 @@
 								"value" : 0.0
 							}
 ,
-							"attack" : 							{
-								"value" : 10.0
+							"pitchlfo-depth" : 							{
+								"value" : 0.0
 							}
 ,
 							"sample-gain" : 							{
@@ -2547,12 +2577,16 @@
 											"value" : 0.9
 										}
 ,
-										"boost" : 										{
-											"value" : 0.0
+										"attack" : 										{
+											"value" : 10.0
 										}
 ,
-										"center-frequency" : 										{
-											"value" : 20000.0
+										"decay" : 										{
+											"value" : 10.0
+										}
+,
+										"filter-q" : 										{
+											"value" : 0.5
 										}
 ,
 										"__sps" : 										{
@@ -2652,6 +2686,14 @@
 											"value" : 50.0
 										}
 ,
+										"filter-range" : 										{
+											"value" : 0.0
+										}
+,
+										"osc-gain" : 										{
+											"value" : 1.0
+										}
+,
 										"lfo-depth" : 										{
 											"value" : 0.0
 										}
@@ -2662,6 +2704,18 @@
 ,
 										"lfo-freq" : 										{
 											"value" : 0.1
+										}
+,
+										"boost" : 										{
+											"value" : 0.0
+										}
+,
+										"center-frequency" : 										{
+											"value" : 20000.0
+										}
+,
+										"pitchlfo-freq" : 										{
+											"value" : 0.0
 										}
 ,
 										"noise" : 										{
@@ -2676,14 +2730,6 @@
 											"value" : 0.0
 										}
 ,
-										"decay" : 										{
-											"value" : 10.0
-										}
-,
-										"filter-q" : 										{
-											"value" : 0.5
-										}
-,
 										"glide" : 										{
 											"value" : 0.0
 										}
@@ -2693,10 +2739,6 @@
 										}
 ,
 										"pitch-start" : 										{
-											"value" : 0.0
-										}
-,
-										"filter-range" : 										{
 											"value" : 0.0
 										}
 ,
@@ -2713,8 +2755,8 @@
 											"value" : 0.0
 										}
 ,
-										"attack" : 										{
-											"value" : 10.0
+										"pitchlfo-depth" : 										{
+											"value" : 0.0
 										}
 ,
 										"sample-gain" : 										{
@@ -3334,7 +3376,10 @@
 			"obj-3::obj-110" : [ "Gain[1]", "Gain", 0 ],
 			"obj-3::obj-114" : [ "osc-freq[1]", "Osc Freq", 0 ],
 			"obj-3::obj-119" : [ "noise[1]", "Noise", 0 ],
+			"obj-3::obj-122" : [ "Oscillator Gain", "Osc Gain", 0 ],
 			"obj-3::obj-123" : [ "detune[1]", "Detune", 0 ],
+			"obj-3::obj-143" : [ "Pitch-LFO-Freq", "Pitch LFO Freq.", 0 ],
+			"obj-3::obj-144" : [ "Pitch-LFO-Depth", "Pitch LFO Depth", 0 ],
 			"obj-3::obj-172" : [ "Release[1]", "Release", 0 ],
 			"obj-3::obj-173" : [ "Decay[2]", "Decay", 0 ],
 			"obj-3::obj-174" : [ "Attack[1]", "Attack", 0 ],
