@@ -12,7 +12,7 @@
 		"classnamespace" : "box",
 		"rect" : [ 85.0, 160.0, 782.0, 393.0 ],
 		"bglocked" : 0,
-		"openinpresentation" : 0,
+		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
 		"default_fontface" : 0,
 		"default_fontname" : "Arial",
@@ -427,19 +427,19 @@
 							}
 ,
 							"sample-loopstart" : 							{
-								"value" : 0.606299212598425
+								"value" : 0.0
 							}
 ,
 							"sample-start" : 							{
-								"value" : 0.464566929133858
+								"value" : 0.0
 							}
 ,
 							"sample-id" : 							{
-								"value" : 2.0
+								"value" : 3.0
 							}
 ,
 							"sample-loopduration" : 							{
-								"value" : 0.118110236220473
+								"value" : 1.0
 							}
 ,
 							"__presetid" : "ynl-sampler"
@@ -462,19 +462,19 @@
 										}
 ,
 										"sample-loopstart" : 										{
-											"value" : 0.606299212598425
+											"value" : 0.0
 										}
 ,
 										"sample-start" : 										{
-											"value" : 0.464566929133858
+											"value" : 0.0
 										}
 ,
 										"sample-id" : 										{
-											"value" : 2.0
+											"value" : 3.0
 										}
 ,
 										"sample-loopduration" : 										{
-											"value" : 0.118110236220473
+											"value" : 1.0
 										}
 ,
 										"__presetid" : "ynl-sampler"
@@ -3637,7 +3637,7 @@
 							}
 ,
 							"sustain" : 							{
-								"value" : 1.0
+								"value" : 0.0
 							}
 ,
 							"gain" : 							{
@@ -3653,7 +3653,7 @@
 							}
 ,
 							"osc-gain" : 							{
-								"value" : 1.0
+								"value" : 0.0
 							}
 ,
 							"lfo-depth" : 							{
@@ -3682,7 +3682,7 @@
 							}
 ,
 							"decay" : 							{
-								"value" : 1406.398666899241562
+								"value" : 600.0
 							}
 ,
 							"lfo-freq" : 							{
@@ -3829,7 +3829,7 @@
 										}
 ,
 										"sustain" : 										{
-											"value" : 1.0
+											"value" : 0.0
 										}
 ,
 										"gain" : 										{
@@ -3845,7 +3845,7 @@
 										}
 ,
 										"osc-gain" : 										{
-											"value" : 1.0
+											"value" : 0.0
 										}
 ,
 										"lfo-depth" : 										{
@@ -3874,7 +3874,7 @@
 										}
 ,
 										"decay" : 										{
-											"value" : 1406.398666899241562
+											"value" : 600.0
 										}
 ,
 										"lfo-freq" : 										{
