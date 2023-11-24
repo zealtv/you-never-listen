@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 34.0, 99.0, 1029.0, 823.0 ],
+		"rect" : [ 85.0, 160.0, 782.0, 393.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -39,6 +39,52 @@
 		"subpatcher_template" : "",
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
+				"box" : 				{
+					"fontname" : "Arial",
+					"fontsize" : 13.0,
+					"id" : "obj-14",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 352.5, 264.0, 55.0, 23.0 ],
+					"text" : "midiinfo"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontface" : 0,
+					"fontname" : "Arial",
+					"fontsize" : 13.0,
+					"id" : "obj-22",
+					"items" : [ "IAC Driver Bus 1", ",", "to Max 1", ",", "to Max 2", ",", "Launchpad Mini MK3 LPMiniMK3 DAW Out", ",", "Launchpad Mini MK3 LPMiniMK3 MIDI Out" ],
+					"maxclass" : "umenu",
+					"numinlets" : 1,
+					"numoutlets" : 3,
+					"outlettype" : [ "int", "", "" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 352.5, 291.0, 150.0, 23.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 11.0, 18.0, 150.0, 23.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Arial",
+					"fontsize" : 13.0,
+					"id" : "obj-26",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 388.5, 236.0, 77.0, 23.0 ],
+					"text" : "loadmess 0"
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"id" : "obj-7",
 					"maxclass" : "newobj",
@@ -214,6 +260,8 @@
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 29.0, 16.5, 159.5, 145.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 62.0, 55.5, 146.5, 145.0 ],
 					"viewvisibility" : 1
 				}
 
@@ -228,6 +276,8 @@
 					"outlettype" : [ "signal", "signal", "", "float", "list" ],
 					"parameter_enable" : 1,
 					"patching_rect" : [ 29.0, 435.0, 49.0, 129.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 11.0, 55.5, 49.0, 129.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_longname" : "live.gain~[1]",
@@ -377,19 +427,19 @@
 							}
 ,
 							"sample-loopstart" : 							{
-								"value" : 0.0
+								"value" : 0.606299212598425
 							}
 ,
 							"sample-start" : 							{
-								"value" : 0.0
+								"value" : 0.464566929133858
 							}
 ,
 							"sample-id" : 							{
-								"value" : 4.0
+								"value" : 2.0
 							}
 ,
 							"sample-loopduration" : 							{
-								"value" : 1.0
+								"value" : 0.118110236220473
 							}
 ,
 							"__presetid" : "ynl-sampler"
@@ -412,19 +462,19 @@
 										}
 ,
 										"sample-loopstart" : 										{
-											"value" : 0.0
+											"value" : 0.606299212598425
 										}
 ,
 										"sample-start" : 										{
-											"value" : 0.0
+											"value" : 0.464566929133858
 										}
 ,
 										"sample-id" : 										{
-											"value" : 4.0
+											"value" : 2.0
 										}
 ,
 										"sample-loopduration" : 										{
-											"value" : 1.0
+											"value" : 0.118110236220473
 										}
 ,
 										"__presetid" : "ynl-sampler"
@@ -467,7 +517,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 59.0, 118.0, 640.0, 480.0 ],
+						"rect" : [ 59.0, 118.0, 1177.0, 554.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -1302,7 +1352,9 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 460.0, 464.5, 92.5, 22.0 ],
-					"text" : "44 0"
+					"presentation" : 1,
+					"presentation_rect" : [ 163.0, 18.0, 56.5, 22.0 ],
+					"text" : "67 0"
 				}
 
 			}
@@ -3246,6 +3298,8 @@
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 204.0, 16.5, 680.25, 145.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 62.0, 212.5, 680.25, 145.0 ],
 					"viewvisibility" : 1
 				}
 
@@ -3272,6 +3326,8 @@
 					"outlettype" : [ "signal", "signal", "", "float", "list" ],
 					"parameter_enable" : 1,
 					"patching_rect" : [ 204.0, 435.0, 49.0, 129.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 11.0, 212.5, 49.0, 129.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_longname" : "live.gain~",
@@ -3488,7 +3544,7 @@
 						"embed" : 1,
 						"snapshot" : 						{
 							"release" : 							{
-								"value" : 10.0
+								"value" : 50.0
 							}
 ,
 							"__sps" : 							{
@@ -3581,7 +3637,7 @@
 							}
 ,
 							"sustain" : 							{
-								"value" : 0.9
+								"value" : 1.0
 							}
 ,
 							"gain" : 							{
@@ -3589,7 +3645,7 @@
 							}
 ,
 							"pitch-decay" : 							{
-								"value" : 50.0
+								"value" : 0.0
 							}
 ,
 							"filter-range" : 							{
@@ -3605,7 +3661,7 @@
 							}
 ,
 							"attack" : 							{
-								"value" : 10.0
+								"value" : 0.0
 							}
 ,
 							"pitchlfo-depth" : 							{
@@ -3622,15 +3678,15 @@
 							}
 ,
 							"filter-q" : 							{
-								"value" : 0.5
+								"value" : 0.0
 							}
 ,
 							"decay" : 							{
-								"value" : 10.0
+								"value" : 1406.398666899241562
 							}
 ,
 							"lfo-freq" : 							{
-								"value" : 0.1
+								"value" : 0.0
 							}
 ,
 							"boost" : 							{
@@ -3638,11 +3694,11 @@
 							}
 ,
 							"center-frequency" : 							{
-								"value" : 20000.0
+								"value" : 20.0
 							}
 ,
 							"pitchlfo-freq" : 							{
-								"value" : 0.1
+								"value" : 0.0
 							}
 ,
 							"noise" : 							{
@@ -3680,7 +3736,7 @@
 									"embed" : 0,
 									"snapshot" : 									{
 										"release" : 										{
-											"value" : 10.0
+											"value" : 50.0
 										}
 ,
 										"__sps" : 										{
@@ -3773,7 +3829,7 @@
 										}
 ,
 										"sustain" : 										{
-											"value" : 0.9
+											"value" : 1.0
 										}
 ,
 										"gain" : 										{
@@ -3781,7 +3837,7 @@
 										}
 ,
 										"pitch-decay" : 										{
-											"value" : 50.0
+											"value" : 0.0
 										}
 ,
 										"filter-range" : 										{
@@ -3797,7 +3853,7 @@
 										}
 ,
 										"attack" : 										{
-											"value" : 10.0
+											"value" : 0.0
 										}
 ,
 										"pitchlfo-depth" : 										{
@@ -3814,15 +3870,15 @@
 										}
 ,
 										"filter-q" : 										{
-											"value" : 0.5
+											"value" : 0.0
 										}
 ,
 										"decay" : 										{
-											"value" : 10.0
+											"value" : 1406.398666899241562
 										}
 ,
 										"lfo-freq" : 										{
-											"value" : 0.1
+											"value" : 0.0
 										}
 ,
 										"boost" : 										{
@@ -3830,11 +3886,11 @@
 										}
 ,
 										"center-frequency" : 										{
-											"value" : 20000.0
+											"value" : 20.0
 										}
 ,
 										"pitchlfo-freq" : 										{
-											"value" : 0.1
+											"value" : 0.0
 										}
 ,
 										"noise" : 										{
@@ -4267,6 +4323,13 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-22", 0 ],
+					"source" : [ "obj-14", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-43", 0 ],
 					"hidden" : 1,
 					"source" : [ "obj-15", 0 ]
@@ -4283,9 +4346,23 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-8", 0 ],
+					"source" : [ "obj-22", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-43", 0 ],
 					"hidden" : 1,
 					"source" : [ "obj-24", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-14", 1 ],
+					"source" : [ "obj-26", 0 ]
 				}
 
 			}
