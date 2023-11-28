@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 111.0, 147.0, 877.0, 601.0 ],
+		"rect" : [ 259.0, 280.0, 877.0, 601.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -354,7 +354,7 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-27",
-					"items" : "ynl-testing",
+					"items" : "<empty>",
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
@@ -513,19 +513,19 @@
 									"patching_rect" : [ 145.0, 405.0, 172.0, 23.0 ],
 									"rnbo_classname" : "param",
 									"rnbo_extra_attributes" : 									{
-										"fromnormalized" : "",
 										"displayorder" : "-",
-										"enum" : "",
-										"displayname" : "",
-										"sendinit" : 1,
-										"tonormalized" : "",
-										"meta" : "",
-										"steps" : 0.0,
-										"preset" : 1,
-										"unit" : "",
+										"order" : "0",
 										"exponent" : 1.0,
+										"preset" : 1,
+										"tonormalized" : "",
+										"fromnormalized" : "",
+										"meta" : "",
 										"ctlin" : 0.0,
-										"order" : "0"
+										"enum" : "",
+										"sendinit" : 1,
+										"unit" : "",
+										"displayname" : "",
+										"steps" : 0.0
 									}
 ,
 									"rnbo_serial" : 1,
@@ -930,8 +930,8 @@
 									"patching_rect" : [ 102.0, 506.0, 43.0, 23.0 ],
 									"rnbo_classname" : "out~",
 									"rnbo_extra_attributes" : 									{
-										"meta" : "",
-										"comment" : ""
+										"comment" : "",
+										"meta" : ""
 									}
 ,
 									"rnbo_serial" : 1,
@@ -1102,9 +1102,9 @@
 									"patching_rect" : [ 30.0, 190.0, 66.0, 23.0 ],
 									"rnbo_classname" : "cycle~",
 									"rnbo_extra_attributes" : 									{
-										"buffername" : "RNBODefaultSinus",
 										"index" : "freq",
-										"interp" : "linear"
+										"interp" : "linear",
+										"buffername" : "RNBODefaultSinus"
 									}
 ,
 									"rnbo_serial" : 1,
@@ -1124,8 +1124,8 @@
 									"patching_rect" : [ 116.0, 198.0, 24.0, 24.0 ],
 									"rnbo_classname" : "toggle",
 									"rnbo_extra_attributes" : 									{
-										"preset" : 0,
-										"order" : ""
+										"order" : "",
+										"preset" : 0
 									}
 ,
 									"rnbo_serial" : 1,
@@ -1227,8 +1227,8 @@
 									"patching_rect" : [ 116.0, 107.0, 24.0, 24.0 ],
 									"rnbo_classname" : "toggle",
 									"rnbo_extra_attributes" : 									{
-										"preset" : 0,
-										"order" : ""
+										"order" : "",
+										"preset" : 0
 									}
 ,
 									"rnbo_serial" : 2,
@@ -1582,7 +1582,7 @@
 		"dependency_cache" : [ 			{
 				"name" : "untitled_20231127.maxsnap",
 				"bootpath" : "~/Documents/Max 8/Snapshots",
-				"patcherrelativepath" : "../../../../Documents/Max 8/Snapshots",
+				"patcherrelativepath" : "../../../Documents/Max 8/Snapshots",
 				"type" : "mx@s",
 				"implicit" : 1
 			}
