@@ -263,7 +263,7 @@
 					"patching_rect" : [ 251.922229253584419, 420.500001668930054, 107.111101773050109, 18.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 178.833323995272224, 13.166701316833496, 39.0, 18.0 ],
-					"text" : "Gain",
+					"text" : "Osc",
 					"textjustification" : 0
 				}
 
@@ -1407,7 +1407,7 @@
 							"parameter_initial_enable" : 1,
 							"parameter_linknames" : 1,
 							"parameter_longname" : "Gain",
-							"parameter_mmax" : 2.0,
+							"parameter_mmax" : 1.0,
 							"parameter_shortname" : "Gain",
 							"parameter_type" : 0,
 							"parameter_unitstyle" : 1
