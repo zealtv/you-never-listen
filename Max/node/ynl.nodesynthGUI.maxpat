@@ -609,85 +609,6 @@
 			}
 , 			{
 				"box" : 				{
-					"id" : "obj-60",
-					"maxclass" : "newobj",
-					"numinlets" : 0,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 499.200018674135208, 29.750002503395081, 71.0, 22.0 ],
-					"text" : "r #0-sendall"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-59",
-					"maxclass" : "live.comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 513.055550886524998, 53.750002503395081, 61.111101773050109, 18.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 597.888883464866126, 97.75, 54.999999821186066, 18.0 ],
-					"text" : "Polyphony",
-					"textjustification" : 0
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-36",
-					"maxclass" : "live.numbox",
-					"numinlets" : 1,
-					"numoutlets" : 2,
-					"outlettype" : [ "", "float" ],
-					"parameter_enable" : 1,
-					"patching_rect" : [ 499.200018674135208, 78.750002503395081, 63.0, 15.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 568.888883464866126, 97.75, 27.0, 15.0 ],
-					"saved_attribute_attributes" : 					{
-						"valueof" : 						{
-							"parameter_initial" : [ 3 ],
-							"parameter_initial_enable" : 1,
-							"parameter_linknames" : 1,
-							"parameter_longname" : "polyphony",
-							"parameter_mmax" : 24.0,
-							"parameter_shortname" : "polyphony",
-							"parameter_type" : 0,
-							"parameter_units" : "Voices",
-							"parameter_unitstyle" : 0
-						}
-
-					}
-,
-					"varname" : "polyphony"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-26",
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 499.200018674135208, 151.416664838790894, 52.0, 22.0 ],
-					"text" : "s #0-out"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-33",
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 499.200018674135208, 109.750005006790161, 111.0, 22.0 ],
-					"text" : "prepend polyphony"
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"id" : "obj-58",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
@@ -2833,13 +2754,6 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-26", 0 ],
-					"source" : [ "obj-33", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-28", 0 ],
 					"source" : [ "obj-34", 0 ]
 				}
@@ -2849,13 +2763,6 @@
 				"patchline" : 				{
 					"destination" : [ "obj-119", 0 ],
 					"source" : [ "obj-35", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-33", 0 ],
-					"source" : [ "obj-36", 0 ]
 				}
 
 			}
@@ -2991,13 +2898,6 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-36", 0 ],
-					"source" : [ "obj-60", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-63", 0 ],
 					"source" : [ "obj-62", 0 ]
 				}
@@ -3119,7 +3019,6 @@
 			"obj-22" : [ "filter-rate", "Filter Rate", 0 ],
 			"obj-24" : [ "Filter Range", "Filter Range", 0 ],
 			"obj-32" : [ "pitch-decay", "Pitch Decay", 0 ],
-			"obj-36" : [ "polyphony", "polyphony", 0 ],
 			"obj-47" : [ "pitch-start[1]", "Pitch Start", 0 ],
 			"obj-51" : [ "Glide", "Glide", 0 ],
 			"obj-53" : [ "LFO-Freq", "LFO Freq.", 0 ],
