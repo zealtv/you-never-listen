@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 34.0, 99.0, 1402.0, 823.0 ],
+		"rect" : [ 34.0, 99.0, 1048.0, 823.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -39,6 +39,41 @@
 		"subpatcher_template" : "",
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-26",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 220.0, 420.5, 29.5, 22.0 ],
+					"text" : "-1"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-19",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "bang", "bang" ],
+					"patching_rect" : [ 207.0, 358.0, 32.0, 22.0 ],
+					"text" : "t b b"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-12",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 298.0, 779.0, 69.0, 22.0 ],
+					"text" : "s #0-debug"
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"id" : "obj-15",
 					"maxclass" : "message",
@@ -74,7 +109,7 @@
 					"parameter_enable" : 1,
 					"patching_rect" : [ 46.111101773050109, 262.5, 44.0, 15.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 13.0, 142.099999725818634, 44.0, 15.900000274181366 ],
+					"presentation_rect" : [ 23.0, 149.099999725818634, 79.0, 15.900000274181366 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_enum" : [ "remote off", "remote on" ],
@@ -114,7 +149,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 252.0, 822.0, 50.0, 49.0 ],
-					"text" : "host 192.168.1.118"
+					"text" : "host 192.168.1.100"
 				}
 
 			}
@@ -148,35 +183,35 @@
 						"count" : 8,
 						"data" : [ 							{
 								"key" : 1,
-								"value" : [ "192.168.1.100" ]
+								"value" : [ "192.168.1.101" ]
 							}
 , 							{
 								"key" : 2,
-								"value" : [ "192.168.1.100" ]
+								"value" : [ "192.168.1.102" ]
 							}
 , 							{
 								"key" : 3,
-								"value" : [ "192.168.1.100" ]
+								"value" : [ "192.168.1.103" ]
 							}
 , 							{
 								"key" : 4,
-								"value" : [ "192.168.1.100" ]
+								"value" : [ "192.168.1.104" ]
 							}
 , 							{
 								"key" : 5,
-								"value" : [ "192.168.1.100" ]
+								"value" : [ "192.168.1.105" ]
 							}
 , 							{
 								"key" : 6,
-								"value" : [ "192.168.1.100" ]
+								"value" : [ "192.168.1.106" ]
 							}
 , 							{
 								"key" : 7,
-								"value" : [ "192.168.1.100" ]
+								"value" : [ "192.168.1.107" ]
 							}
 , 							{
 								"key" : 8,
-								"value" : [ "192.168.1.100" ]
+								"value" : [ "192.168.1.108" ]
 							}
  ]
 					}
@@ -325,9 +360,9 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
 					"parameter_enable" : 1,
-					"patching_rect" : [ 322.111101773050109, 636.0, 44.0, 15.0 ],
+					"patching_rect" : [ 346.111101773050109, 426.0, 44.0, 15.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 60.0, 142.099999725818634, 44.0, 15.900000274181366 ],
+					"presentation_rect" : [ 858.0, 149.099999725818634, 44.0, 15.900000274181366 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_enum" : [ "debug off", "debug on" ],
@@ -352,7 +387,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 322.111101773050109, 711.0, 40.0, 22.0 ],
+					"patching_rect" : [ 346.111101773050109, 501.0, 40.0, 22.0 ],
 					"text" : "gate"
 				}
 
@@ -363,7 +398,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 322.111101773050109, 752.0, 69.0, 22.0 ],
+					"patching_rect" : [ 346.111101773050109, 542.0, 69.0, 22.0 ],
 					"text" : "print debug"
 				}
 
@@ -375,7 +410,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 343.111101773050109, 668.0, 67.0, 22.0 ],
+					"patching_rect" : [ 367.111101773050109, 458.0, 67.0, 22.0 ],
 					"text" : "r #0-debug"
 				}
 
@@ -411,7 +446,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 95.5, 356.0, 58.0, 22.0 ],
+					"patching_rect" : [ 207.0, 321.0, 58.0, 22.0 ],
 					"text" : "loadbang"
 				}
 
@@ -434,7 +469,7 @@
 					"maxclass" : "live.comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 284.0, 486.0, 49.111101773050109, 18.0 ],
+					"patching_rect" : [ 388.111101773050109, 391.5, 49.111101773050109, 18.0 ],
 					"text" : "Group",
 					"textjustification" : 0
 				}
@@ -448,7 +483,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "float" ],
 					"parameter_enable" : 1,
-					"patching_rect" : [ 238.0, 486.0, 44.0, 15.0 ],
+					"patching_rect" : [ 342.111101773050109, 391.5, 44.0, 15.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_initial" : [ 1.0 ],
@@ -474,9 +509,9 @@
 					"maxclass" : "live.comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 152.5, 428.0, 49.111101773050109, 18.0 ],
+					"patching_rect" : [ 141.5, 424.5, 49.111101773050109, 18.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 60.0, 105.0, 46.0, 18.0 ],
+					"presentation_rect" : [ 69.0, 103.5, 38.0, 18.0 ],
 					"text" : "Node",
 					"textjustification" : 0
 				}
@@ -490,9 +525,9 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "float" ],
 					"parameter_enable" : 1,
-					"patching_rect" : [ 95.5, 431.0, 44.0, 15.0 ],
+					"patching_rect" : [ 95.5, 426.0, 44.0, 15.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 13.0, 105.0, 44.0, 15.0 ],
+					"presentation_rect" : [ 23.0, 105.0, 44.0, 15.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_initial" : [ 1.0 ],
@@ -587,6 +622,20 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-23", 0 ],
+					"source" : [ "obj-19", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-26", 0 ],
+					"source" : [ "obj-19", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-19", 0 ],
 					"source" : [ "obj-21", 0 ]
 				}
 
@@ -616,6 +665,13 @@
 				"patchline" : 				{
 					"destination" : [ "obj-43", 0 ],
 					"source" : [ "obj-24", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-43", 0 ],
+					"source" : [ "obj-26", 0 ]
 				}
 
 			}
@@ -672,7 +728,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-20", 1 ],
+					"destination" : [ "obj-12", 0 ],
 					"order" : 0,
 					"source" : [ "obj-47", 0 ]
 				}
@@ -680,8 +736,16 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-45", 0 ],
+					"destination" : [ "obj-20", 1 ],
 					"order" : 1,
+					"source" : [ "obj-47", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-45", 0 ],
+					"order" : 2,
 					"source" : [ "obj-47", 0 ]
 				}
 
@@ -725,7 +789,8 @@
 			}
  ],
 		"parameters" : 		{
-			"obj-1::obj-11" : [ "master", "master", 0 ],
+			"obj-1::obj-11" : [ "master", "Master", 0 ],
+			"obj-1::obj-14" : [ "chan2-enable", "chan2", 0 ],
 			"obj-1::obj-3::obj-110" : [ "Gain", "Gain", 0 ],
 			"obj-1::obj-3::obj-114" : [ "osc-freq[1]", "Osc Freq", 0 ],
 			"obj-1::obj-3::obj-119" : [ "noise", "Noise", 0 ],
@@ -738,19 +803,22 @@
 			"obj-1::obj-3::obj-174" : [ "Attack", "Attack", 0 ],
 			"obj-1::obj-3::obj-175" : [ "Sustain", "Sustain", 0 ],
 			"obj-1::obj-3::obj-18" : [ "filter-on", "Filter Enable", 0 ],
-			"obj-1::obj-3::obj-185" : [ "Boost", "Boost", 0 ],
+			"obj-1::obj-3::obj-185" : [ "Boost", "Clip", 0 ],
 			"obj-1::obj-3::obj-22" : [ "filter-rate", "Filter Rate", 0 ],
 			"obj-1::obj-3::obj-24" : [ "Filter Range", "Filter LFO Range", 0 ],
 			"obj-1::obj-3::obj-32" : [ "pitch-decay", "Pitch Decay", 0 ],
 			"obj-1::obj-3::obj-47" : [ "pitch-start[1]", "Pitch Start", 0 ],
 			"obj-1::obj-3::obj-51" : [ "Glide", "Glide", 0 ],
-			"obj-1::obj-3::obj-53" : [ "LFO-Freq", "LFO Freq.", 0 ],
-			"obj-1::obj-3::obj-55" : [ "LFO-Depth", "LFO Depth", 0 ],
+			"obj-1::obj-3::obj-53" : [ "LFO-Freq", "Gain LFO Freq", 0 ],
+			"obj-1::obj-3::obj-55" : [ "LFO-Depth", "Gain LFO Depth", 0 ],
+			"obj-1::obj-3::obj-61" : [ "Filter LFO Retrigger", "Filter LFO Retrigger", 0 ],
 			"obj-1::obj-3::obj-62" : [ "filtermode", "Filter Mode", 0 ],
-			"obj-1::obj-3::obj-77" : [ "q", "q", 0 ],
-			"obj-1::obj-3::obj-79" : [ "filter-cutoff", "Cutoff", 0 ],
-			"obj-1::obj-67" : [ "channel", "channel", 0 ],
-			"obj-1::obj-87" : [ "SEND 1[1]", "SEND", 0 ],
+			"obj-1::obj-3::obj-77" : [ "q", "Filter Q", 0 ],
+			"obj-1::obj-3::obj-78" : [ "Gain LFO Retrigger", "Gain LFO Retrigger", 0 ],
+			"obj-1::obj-3::obj-79" : [ "filter-cutoff", "Filter Cut Off", 0 ],
+			"obj-1::obj-3::obj-84" : [ "Pitch LFO Retrigger", "Pitch LFO Retrigger", 0 ],
+			"obj-1::obj-6" : [ "chan1-enable", "chan1", 0 ],
+			"obj-1::obj-87" : [ "SEND 1[1]", "Update All", 0 ],
 			"obj-1::obj-92::obj-103" : [ "Sample ID", "Sample ID", 0 ],
 			"obj-1::obj-92::obj-110" : [ "Gain[1]", "Sample Gain", 0 ],
 			"obj-1::obj-92::obj-180" : [ "Sample Start", "Sample Start", 0 ],
@@ -770,8 +838,68 @@
 			}
 ,
 			"parameter_overrides" : 			{
+				"obj-1::obj-11" : 				{
+					"parameter_longname" : "master"
+				}
+,
+				"obj-1::obj-3::obj-114" : 				{
+					"parameter_longname" : "osc-freq[1]"
+				}
+,
+				"obj-1::obj-3::obj-119" : 				{
+					"parameter_longname" : "noise"
+				}
+,
+				"obj-1::obj-3::obj-123" : 				{
+					"parameter_longname" : "detune"
+				}
+,
+				"obj-1::obj-3::obj-18" : 				{
+					"parameter_longname" : "filter-on"
+				}
+,
+				"obj-1::obj-3::obj-185" : 				{
+					"parameter_longname" : "Boost"
+				}
+,
+				"obj-1::obj-3::obj-22" : 				{
+					"parameter_longname" : "filter-rate"
+				}
+,
 				"obj-1::obj-3::obj-24" : 				{
 					"parameter_longname" : "Filter Range"
+				}
+,
+				"obj-1::obj-3::obj-32" : 				{
+					"parameter_longname" : "pitch-decay"
+				}
+,
+				"obj-1::obj-3::obj-47" : 				{
+					"parameter_longname" : "pitch-start[1]"
+				}
+,
+				"obj-1::obj-3::obj-53" : 				{
+					"parameter_longname" : "LFO-Freq"
+				}
+,
+				"obj-1::obj-3::obj-55" : 				{
+					"parameter_longname" : "LFO-Depth"
+				}
+,
+				"obj-1::obj-3::obj-62" : 				{
+					"parameter_longname" : "filtermode"
+				}
+,
+				"obj-1::obj-3::obj-77" : 				{
+					"parameter_longname" : "q"
+				}
+,
+				"obj-1::obj-3::obj-79" : 				{
+					"parameter_longname" : "filter-cutoff"
+				}
+,
+				"obj-1::obj-87" : 				{
+					"parameter_longname" : "SEND 1[1]"
 				}
 ,
 				"obj-1::obj-92::obj-110" : 				{

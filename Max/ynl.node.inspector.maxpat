@@ -46,8 +46,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 653.0, 155.7999267578125, 137.0, 22.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 267.0, 158.7999267578125, 137.0, 22.0 ],
 					"text" : "patcherdestroy ynl-node"
 				}
 
@@ -60,8 +58,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 524.0, 155.7999267578125, 127.0, 22.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 267.0, 185.7999267578125, 127.0, 22.0 ],
 					"text" : "patcherdestroy testing"
 				}
 
