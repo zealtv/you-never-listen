@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 177.0, 131.0, 734.0, 823.0 ],
+		"rect" : [ 177.0, 99.0, 734.0, 823.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -591,16 +591,16 @@
 							"parameter_initial" : [ 2000 ],
 							"parameter_initial_enable" : 1,
 							"parameter_linknames" : 1,
-							"parameter_longname" : "Attack[1]",
+							"parameter_longname" : "Release",
 							"parameter_mmax" : 20000.0,
-							"parameter_shortname" : "Attack",
+							"parameter_shortname" : "Release",
 							"parameter_type" : 0,
 							"parameter_unitstyle" : 2
 						}
 
 					}
 ,
-					"varname" : "Attack[1]"
+					"varname" : "Release"
 				}
 
 			}
@@ -937,7 +937,7 @@
 			"obj-21" : [ "chan2-enable", "chan2", 0 ],
 			"obj-22" : [ "chan1-enable", "chan1", 0 ],
 			"obj-3" : [ "Attack", "Attack", 0 ],
-			"obj-7" : [ "Attack[1]", "Attack", 0 ],
+			"obj-7" : [ "Release", "Release", 0 ],
 			"parameterbanks" : 			{
 				"0" : 				{
 					"index" : 0,
