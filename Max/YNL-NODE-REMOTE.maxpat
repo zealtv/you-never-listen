@@ -4,13 +4,13 @@
 		"appversion" : 		{
 			"major" : 8,
 			"minor" : 5,
-			"revision" : 6,
+			"revision" : 5,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 34.0, 99.0, 1048.0, 823.0 ],
+		"rect" : [ 431.0, 155.0, 670.0, 705.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -39,6 +39,18 @@
 		"subpatcher_template" : "",
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-74",
+					"linecount" : 4,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 818.0, 48.0, 150.0, 60.0 ],
+					"text" : "I'm a mess, tidy me up.  This patch and the bpatcher could be the same V"
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"id" : "obj-25",
 					"maxclass" : "message",
@@ -87,18 +99,6 @@
 			}
 , 			{
 				"box" : 				{
-					"id" : "obj-15",
-					"maxclass" : "message",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 25.25, 155.0, 71.0, 22.0 ],
-					"text" : "outputvalue"
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"id" : "obj-17",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
@@ -106,35 +106,6 @@
 					"outlettype" : [ "bang" ],
 					"patching_rect" : [ 46.0, 213.0, 58.0, 22.0 ],
 					"text" : "loadbang"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"automation" : "remote off",
-					"automationon" : "remote on",
-					"id" : "obj-8",
-					"maxclass" : "live.text",
-					"numinlets" : 1,
-					"numoutlets" : 2,
-					"outlettype" : [ "", "" ],
-					"parameter_enable" : 1,
-					"patching_rect" : [ 25.25, 183.0, 44.0, 15.0 ],
-					"saved_attribute_attributes" : 					{
-						"valueof" : 						{
-							"parameter_enum" : [ "remote off", "remote on" ],
-							"parameter_linknames" : 1,
-							"parameter_longname" : "remote",
-							"parameter_mmax" : 1,
-							"parameter_shortname" : "remote",
-							"parameter_type" : 2
-						}
-
-					}
-,
-					"text" : "remote",
-					"texton" : "REMOTE",
-					"varname" : "remote"
 				}
 
 			}
@@ -248,7 +219,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 959.0, 255.0, 150.0, 33.0 ],
+					"patching_rect" : [ 959.0, 300.0, 150.0, 33.0 ],
 					"text" : "raw messages to control embedded rnbo"
 				}
 
@@ -274,7 +245,7 @@
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1111.0, 255.0, 30.0, 30.0 ]
+					"patching_rect" : [ 1111.0, 300.0, 30.0, 30.0 ]
 				}
 
 			}
@@ -370,9 +341,9 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
 					"parameter_enable" : 1,
-					"patching_rect" : [ 346.111101773050109, 426.0, 44.0, 15.0 ],
+					"patching_rect" : [ 362.111101773050109, 573.5, 44.0, 15.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 13.666666686534882, 148.099999725818634, 78.333333313465118, 15.900000274181366 ],
+					"presentation_rect" : [ 789.666666686534882, 149.099999725818634, 78.333333313465118, 15.900000274181366 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_enum" : [ "debug off", "debug on" ],
@@ -397,7 +368,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 346.111101773050109, 501.0, 40.0, 22.0 ],
+					"patching_rect" : [ 362.111101773050109, 648.5, 40.0, 22.0 ],
 					"text" : "gate"
 				}
 
@@ -408,7 +379,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 346.111101773050109, 542.0, 69.0, 22.0 ],
+					"patching_rect" : [ 362.111101773050109, 689.5, 69.0, 22.0 ],
 					"text" : "print debug"
 				}
 
@@ -420,7 +391,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 367.111101773050109, 458.0, 67.0, 22.0 ],
+					"patching_rect" : [ 383.111101773050109, 605.5, 67.0, 22.0 ],
 					"text" : "r #0-debug"
 				}
 
@@ -470,46 +441,6 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 46.0, 457.0, 68.5, 22.0 ],
 					"text" : "join"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-6",
-					"maxclass" : "live.comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 388.111101773050109, 391.5, 49.111101773050109, 18.0 ],
-					"text" : "Group",
-					"textjustification" : 0
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-7",
-					"maxclass" : "live.numbox",
-					"numinlets" : 1,
-					"numoutlets" : 2,
-					"outlettype" : [ "", "float" ],
-					"parameter_enable" : 1,
-					"patching_rect" : [ 342.111101773050109, 391.5, 44.0, 15.0 ],
-					"saved_attribute_attributes" : 					{
-						"valueof" : 						{
-							"parameter_initial" : [ 1.0 ],
-							"parameter_initial_enable" : 1,
-							"parameter_linknames" : 1,
-							"parameter_longname" : "group",
-							"parameter_mmax" : 8.0,
-							"parameter_mmin" : 1.0,
-							"parameter_shortname" : "group",
-							"parameter_type" : 1,
-							"parameter_unitstyle" : 0
-						}
-
-					}
-,
-					"varname" : "group"
 				}
 
 			}
@@ -569,10 +500,10 @@
 					"maxclass" : "bpatcher",
 					"name" : "YNL-NODE-GUI.maxpat",
 					"numinlets" : 1,
-					"numoutlets" : 2,
+					"numoutlets" : 3,
 					"offset" : [ 0.0, 0.0 ],
-					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 137.0, 73.0, 993.0, 151.0 ],
+					"outlettype" : [ "", "", "" ],
+					"patching_rect" : [ 137.0, 118.0, 993.0, 151.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ -3.0, 2.0, 901.0, 167.0 ],
 					"viewvisibility" : 1
@@ -590,7 +521,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-2", 0 ],
-					"source" : [ "obj-1", 1 ]
+					"source" : [ "obj-1", 2 ]
 				}
 
 			}
@@ -605,13 +536,6 @@
 				"patchline" : 				{
 					"destination" : [ "obj-24", 0 ],
 					"source" : [ "obj-13", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-8", 0 ],
-					"source" : [ "obj-15", 0 ]
 				}
 
 			}
@@ -837,8 +761,6 @@
 			"obj-1::obj-92::obj-97" : [ "Sample End", "Duration", 0 ],
 			"obj-33" : [ "live.text", "live.text", 0 ],
 			"obj-67" : [ "node", "node", 0 ],
-			"obj-7" : [ "group", "group", 0 ],
-			"obj-8" : [ "remote", "remote", 0 ],
 			"parameterbanks" : 			{
 				"0" : 				{
 					"index" : 0,
