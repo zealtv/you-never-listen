@@ -40,12 +40,24 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
+					"bgcolor" : [ 0.301961, 0.301961, 0.301961, 1.0 ],
+					"bgcolor2" : [ 0.301961, 0.301961, 0.301961, 1.0 ],
+					"bgfillcolor_angle" : 270.0,
+					"bgfillcolor_autogradient" : 0.0,
+					"bgfillcolor_color" : [ 1.0, 0.407843137254902, 0.407843137254902, 1.0 ],
+					"bgfillcolor_color1" : [ 0.301961, 0.301961, 0.301961, 1.0 ],
+					"bgfillcolor_color2" : [ 0.2, 0.2, 0.2, 1.0 ],
+					"bgfillcolor_proportion" : 0.5,
+					"bgfillcolor_type" : "color",
+					"gradient" : 1,
 					"id" : "obj-45",
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 653.0, 155.7999267578125, 137.0, 22.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 280.0, 168.7999267578125, 144.0, 22.0 ],
 					"text" : "patcherdestroy ynl-node"
 				}
 
@@ -287,7 +299,7 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-27",
-					"items" : [ "node1", ",", "node2", ",", "node3", ",", "node4", ",", "node5", ",", "node6", ",", "node7", ",", "node8" ],
+					"items" : "<empty>",
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,

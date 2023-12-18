@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 388.0, 291.0, 640.0, 480.0 ],
+		"rect" : [ 769.0, 99.0, 667.0, 823.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -44,7 +44,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 6.0, 103.0, 150.0, 20.0 ],
+					"patching_rect" : [ 31.0, 255.0, 150.0, 20.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 6.0, 98.0, 150.0, 20.0 ],
 					"text" : "Last Message:"
@@ -122,10 +122,10 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 35.0, 78.0, 150.0, 20.0 ],
+					"patching_rect" : [ 41.0, 91.0, 150.0, 20.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 6.0, 120.0, 150.0, 20.0 ],
-					"text" : "/lights/scene 0",
+					"text" : "/light/go/5 0.00 0.00 0.00",
 					"textcolor" : [ 0.427450980392157, 0.427450980392157, 0.427450980392157, 1.0 ]
 				}
 
