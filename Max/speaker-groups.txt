@@ -1,0 +1,21 @@
+around 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16
+around-rev 16 15 14 13 12 11 10 9 8 7 6 5 4 3 2 1
+around-odd 1 3 5 7 9 11 13 15
+around-even 2 4 6 8 10 12 14 16
+around-odd-rev 15 13 11 9 7 5 3 1
+around-even-rev 16 14 12 10 8 6 4 2
+random1 14 2 7 11 6 8 10 4 1 15 12 5 3 9 16 13
+random2 9 5 14 7 12 3 11 8 2 4 6 10 15 1 16 13
+random3 6 14 5 10 2 11 9 16 4 12 7 8 13 15 3 1
+random4 8 3 6 9 2 14 1 11 15 7 12 5 4 10 13 16
+random5 12 7 3 6 15 1 14 9 4 13 8 10 2 11 16 5
+random1-odd 7 11 1 15 5 3 9 13
+random2-odd 9 5 7 3 11 15 1 13
+random3-odd 5 9 11 7 13 15 3 1
+random4-odd 3 9 1 11 15 7 5 13
+random5-odd 7 3 15 1 9 13 5
+random1-even 14 2 6 8 10 4 12 16
+random2-even 12 8 2 4 6 10 16
+random3-even 6 10 2 16 4 12 8
+random4-even 8 6 2 14 4 10 16
+random5-even 12 6 14 2 8 10 16
