@@ -4,13 +4,13 @@
 		"appversion" : 		{
 			"major" : 8,
 			"minor" : 5,
-			"revision" : 6,
+			"revision" : 7,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 270.0, 268.0, 987.0, 578.0 ],
+		"rect" : [ 34.0, 99.0, 1402.0, 823.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -39,6 +39,52 @@
 		"subpatcher_template" : "",
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-33",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 888.0, 273.899995028972626, 58.0, 22.0 ],
+					"text" : "s #0-msg"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-34",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 888.0, 238.399995028972626, 57.0, 22.0 ],
+					"text" : "tosymbol"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"bgmode" : 0,
+					"border" : 0,
+					"clickthrough" : 0,
+					"enablehscroll" : 0,
+					"enablevscroll" : 0,
+					"id" : "obj-36",
+					"lockeddragscroll" : 0,
+					"lockedsize" : 0,
+					"maxclass" : "bpatcher",
+					"name" : "ynl.nodefilterGUI.maxpat",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"offset" : [ 0.0, 0.0 ],
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 888.0, 71.5, 124.0, 145.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 798.172246320380282, 4.0, 129.25, 145.0 ],
+					"viewvisibility" : 1
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"id" : "obj-30",
 					"maxclass" : "newobj",
@@ -69,7 +115,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1101.0, 204.899995028972626, 80.0, 22.0 ],
+					"patching_rect" : [ 1296.0, 204.899995028972626, 80.0, 22.0 ],
 					"text" : "oscnoteoff 40"
 				}
 
@@ -81,7 +127,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1101.0, 129.899995028972626, 29.5, 22.0 ],
+					"patching_rect" : [ 1296.0, 129.899995028972626, 29.5, 22.0 ],
 					"text" : "1"
 				}
 
@@ -93,7 +139,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1138.0, 129.899995028972626, 29.5, 22.0 ],
+					"patching_rect" : [ 1333.0, 129.899995028972626, 29.5, 22.0 ],
 					"text" : "0"
 				}
 
@@ -105,7 +151,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 1138.0, 86.899995028972626, 61.0, 22.0 ],
+					"patching_rect" : [ 1333.0, 86.899995028972626, 61.0, 22.0 ],
 					"text" : "delay 500"
 				}
 
@@ -117,7 +163,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 1101.0, 166.899995028972626, 63.0, 22.0 ],
+					"patching_rect" : [ 1296.0, 166.899995028972626, 63.0, 22.0 ],
 					"text" : "metro 100"
 				}
 
@@ -133,9 +179,9 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
 					"parameter_enable" : 1,
-					"patching_rect" : [ 1101.0, 37.899995028972626, 66.0, 26.0 ],
+					"patching_rect" : [ 1296.0, 37.899995028972626, 66.0, 26.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 795.0, 52.0, 66.0, 26.0 ],
+					"presentation_rect" : [ 685.0, 51.0, 66.0, 26.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_enum" : [ "\"Stop Notes Off\"", "\"Stop Notes On\"" ],
@@ -371,7 +417,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 892.0, 209.0, 58.0, 22.0 ],
+					"patching_rect" : [ 1087.0, 209.0, 58.0, 22.0 ],
 					"text" : "s #0-msg"
 				}
 
@@ -396,7 +442,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 892.0, 166.399995028972626, 57.0, 22.0 ],
+					"patching_rect" : [ 1087.0, 166.399995028972626, 57.0, 22.0 ],
 					"text" : "tosymbol"
 				}
 
@@ -410,7 +456,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "float" ],
 					"parameter_enable" : 1,
-					"patching_rect" : [ 892.0, 37.399995028972626, 50.0, 63.0 ],
+					"patching_rect" : [ 1087.0, 37.399995028972626, 50.0, 63.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 27.938901189300736, 29.0, 50.0, 63.0 ],
 					"saved_attribute_attributes" : 					{
@@ -438,7 +484,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 892.0, 129.399995028972626, 62.0, 22.0 ],
+					"patching_rect" : [ 1087.0, 129.399995028972626, 62.0, 22.0 ],
 					"text" : "master $1"
 				}
 
@@ -510,7 +556,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 5,
-							"revision" : 6,
+							"revision" : 7,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -772,7 +818,7 @@
  ]
 					}
 ,
-					"patching_rect" : [ 1002.0, 204.899995028972626, 86.0, 22.0 ],
+					"patching_rect" : [ 1197.0, 204.899995028972626, 86.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"description" : "",
 						"digest" : "",
@@ -791,7 +837,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1002.0, 260.299990057945251, 76.0, 22.0 ],
+					"patching_rect" : [ 1197.0, 260.299990057945251, 76.0, 22.0 ],
 					"text" : "s #0-oscmidi"
 				}
 
@@ -805,7 +851,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1002.0, 157.399995028972626, 30.0, 30.0 ]
+					"patching_rect" : [ 1197.0, 157.399995028972626, 30.0, 30.0 ]
 				}
 
 			}
@@ -858,7 +904,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 5,
-							"revision" : 6,
+							"revision" : 7,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -990,7 +1036,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 5,
-							"revision" : 6,
+							"revision" : 7,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -1141,7 +1187,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 5,
-							"revision" : 6,
+							"revision" : 7,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -1333,7 +1379,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 202.0, 71.5, 680.25, 145.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 252.922246320380225, 4.0, 654.25, 145.0 ],
+					"presentation_rect" : [ 252.922246320380225, 4.0, 543.25, 145.0 ],
 					"viewvisibility" : 1
 				}
 
@@ -1499,8 +1545,22 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-33", 0 ],
+					"source" : [ "obj-34", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-28", 0 ],
 					"source" : [ "obj-35", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-34", 0 ],
+					"source" : [ "obj-36", 0 ]
 				}
 
 			}
@@ -1607,8 +1667,16 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-92", 0 ],
+					"destination" : [ "obj-36", 0 ],
 					"order" : 0,
+					"source" : [ "obj-87", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-92", 0 ],
+					"order" : 2,
 					"source" : [ "obj-87", 0 ]
 				}
 
@@ -1625,6 +1693,14 @@
 			"obj-11" : [ "Master", "Master", 0 ],
 			"obj-14" : [ "chan2-enable", "chan2", 0 ],
 			"obj-27" : [ "Stop Notes", "Stop", 0 ],
+			"obj-36::obj-18" : [ "Filter Enable", "Filter Enable", 0 ],
+			"obj-36::obj-185" : [ "Clip", "Clip", 0 ],
+			"obj-36::obj-22" : [ "Filter Rate", "Filter Rate", 0 ],
+			"obj-36::obj-24" : [ "Filter LFO Range", "Filter LFO Range", 0 ],
+			"obj-36::obj-61" : [ "Filter LFO Retrigger[1]", "Filter LFO Retrigger", 0 ],
+			"obj-36::obj-62" : [ "Filter Mode", "Filter Mode", 0 ],
+			"obj-36::obj-77" : [ "Filter Q", "Filter Q", 0 ],
+			"obj-36::obj-79" : [ "Filter Cut Off", "Filter Cut Off", 0 ],
 			"obj-3::obj-110" : [ "Gain", "Gain", 0 ],
 			"obj-3::obj-114" : [ "osc-freq[1]", "Osc Freq", 0 ],
 			"obj-3::obj-119" : [ "noise", "Noise", 0 ],
@@ -1636,20 +1712,12 @@
 			"obj-3::obj-173" : [ "Decay", "Decay", 0 ],
 			"obj-3::obj-174" : [ "Attack", "Attack", 0 ],
 			"obj-3::obj-175" : [ "Sustain", "Sustain", 0 ],
-			"obj-3::obj-18" : [ "filter-on", "Filter Enable", 0 ],
-			"obj-3::obj-185" : [ "Boost", "Clip", 0 ],
-			"obj-3::obj-22" : [ "filter-rate", "Filter Rate", 0 ],
-			"obj-3::obj-24" : [ "Filter Range", "Filter LFO Range", 0 ],
 			"obj-3::obj-32" : [ "pitch-decay", "Pitch Decay", 0 ],
 			"obj-3::obj-47" : [ "pitch-start[1]", "Pitch Start", 0 ],
 			"obj-3::obj-51" : [ "Glide", "Glide", 0 ],
 			"obj-3::obj-53" : [ "LFO-Freq", "Gain LFO Freq", 0 ],
 			"obj-3::obj-55" : [ "LFO-Depth", "Gain LFO Depth", 0 ],
-			"obj-3::obj-61" : [ "Filter LFO Retrigger", "Filter LFO Retrigger", 0 ],
-			"obj-3::obj-62" : [ "filtermode", "Filter Mode", 0 ],
-			"obj-3::obj-77" : [ "q", "Filter Q", 0 ],
 			"obj-3::obj-78" : [ "Gain LFO Retrigger", "Gain LFO Retrigger", 0 ],
-			"obj-3::obj-79" : [ "filter-cutoff", "Filter Cut Off", 0 ],
 			"obj-3::obj-84" : [ "Pitch LFO Retrigger", "Pitch LFO Retrigger", 0 ],
 			"obj-6" : [ "chan1-enable", "chan1", 0 ],
 			"obj-87" : [ "Update All", "Update All", 0 ],
@@ -1668,6 +1736,10 @@
 			}
 ,
 			"parameter_overrides" : 			{
+				"obj-36::obj-61" : 				{
+					"parameter_longname" : "Filter LFO Retrigger[1]"
+				}
+,
 				"obj-3::obj-114" : 				{
 					"parameter_longname" : "osc-freq[1]"
 				}
@@ -1678,22 +1750,6 @@
 ,
 				"obj-3::obj-123" : 				{
 					"parameter_longname" : "detune"
-				}
-,
-				"obj-3::obj-18" : 				{
-					"parameter_longname" : "filter-on"
-				}
-,
-				"obj-3::obj-185" : 				{
-					"parameter_longname" : "Boost"
-				}
-,
-				"obj-3::obj-22" : 				{
-					"parameter_longname" : "filter-rate"
-				}
-,
-				"obj-3::obj-24" : 				{
-					"parameter_longname" : "Filter Range"
 				}
 ,
 				"obj-3::obj-32" : 				{
@@ -1712,18 +1768,6 @@
 					"parameter_longname" : "LFO-Depth"
 				}
 ,
-				"obj-3::obj-62" : 				{
-					"parameter_longname" : "filtermode"
-				}
-,
-				"obj-3::obj-77" : 				{
-					"parameter_longname" : "q"
-				}
-,
-				"obj-3::obj-79" : 				{
-					"parameter_longname" : "filter-cutoff"
-				}
-,
 				"obj-92::obj-110" : 				{
 					"parameter_longname" : "Gain[1]"
 				}
@@ -1738,6 +1782,13 @@
 		}
 ,
 		"dependency_cache" : [ 			{
+				"name" : "ynl.nodefilterGUI.maxpat",
+				"bootpath" : "~/repos/you-never-listen/Max",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
 				"name" : "ynl.nodesamplerGUI.maxpat",
 				"bootpath" : "~/repos/you-never-listen/Max",
 				"patcherrelativepath" : ".",

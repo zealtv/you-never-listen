@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 431.0, 155.0, 670.0, 705.0 ],
+		"rect" : [ 431.0, 155.0, 459.0, 705.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -343,7 +343,7 @@
 					"parameter_enable" : 1,
 					"patching_rect" : [ 362.111101773050109, 573.5, 44.0, 15.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 789.666666686534882, 149.099999725818634, 78.333333313465118, 15.900000274181366 ],
+					"presentation_rect" : [ 13.666666686534882, 141.099999725818634, 78.333333313465118, 15.900000274181366 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_enum" : [ "debug off", "debug on" ],
@@ -505,7 +505,7 @@
 					"outlettype" : [ "", "", "" ],
 					"patching_rect" : [ 137.0, 118.0, 993.0, 151.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ -3.0, 2.0, 901.0, 167.0 ],
+					"presentation_rect" : [ -3.0, 2.0, 932.0, 167.0 ],
 					"viewvisibility" : 1
 				}
 
@@ -726,6 +726,14 @@
 			"obj-1::obj-11" : [ "master", "Master", 0 ],
 			"obj-1::obj-14" : [ "chan2-enable", "chan2", 0 ],
 			"obj-1::obj-27" : [ "Stop Notes", "Stop", 0 ],
+			"obj-1::obj-36::obj-18" : [ "Filter Enable", "Filter Enable", 0 ],
+			"obj-1::obj-36::obj-185" : [ "Clip", "Clip", 0 ],
+			"obj-1::obj-36::obj-22" : [ "Filter Rate", "Filter Rate", 0 ],
+			"obj-1::obj-36::obj-24" : [ "Filter LFO Range", "Filter LFO Range", 0 ],
+			"obj-1::obj-36::obj-61" : [ "Filter LFO Retrigger", "Filter LFO Retrigger", 0 ],
+			"obj-1::obj-36::obj-62" : [ "Filter Mode", "Filter Mode", 0 ],
+			"obj-1::obj-36::obj-77" : [ "Filter Q", "Filter Q", 0 ],
+			"obj-1::obj-36::obj-79" : [ "Filter Cut Off", "Filter Cut Off", 0 ],
 			"obj-1::obj-3::obj-110" : [ "Gain", "Gain", 0 ],
 			"obj-1::obj-3::obj-114" : [ "osc-freq[1]", "Osc Freq", 0 ],
 			"obj-1::obj-3::obj-119" : [ "noise", "Noise", 0 ],
@@ -737,20 +745,12 @@
 			"obj-1::obj-3::obj-173" : [ "Decay", "Decay", 0 ],
 			"obj-1::obj-3::obj-174" : [ "Attack", "Attack", 0 ],
 			"obj-1::obj-3::obj-175" : [ "Sustain", "Sustain", 0 ],
-			"obj-1::obj-3::obj-18" : [ "filter-on", "Filter Enable", 0 ],
-			"obj-1::obj-3::obj-185" : [ "Boost", "Clip", 0 ],
-			"obj-1::obj-3::obj-22" : [ "filter-rate", "Filter Rate", 0 ],
-			"obj-1::obj-3::obj-24" : [ "Filter Range", "Filter LFO Range", 0 ],
 			"obj-1::obj-3::obj-32" : [ "pitch-decay", "Pitch Decay", 0 ],
 			"obj-1::obj-3::obj-47" : [ "pitch-start[1]", "Pitch Start", 0 ],
 			"obj-1::obj-3::obj-51" : [ "Glide", "Glide", 0 ],
 			"obj-1::obj-3::obj-53" : [ "LFO-Freq", "Gain LFO Freq", 0 ],
 			"obj-1::obj-3::obj-55" : [ "LFO-Depth", "Gain LFO Depth", 0 ],
-			"obj-1::obj-3::obj-61" : [ "Filter LFO Retrigger", "Filter LFO Retrigger", 0 ],
-			"obj-1::obj-3::obj-62" : [ "filtermode", "Filter Mode", 0 ],
-			"obj-1::obj-3::obj-77" : [ "q", "Filter Q", 0 ],
 			"obj-1::obj-3::obj-78" : [ "Gain LFO Retrigger", "Gain LFO Retrigger", 0 ],
-			"obj-1::obj-3::obj-79" : [ "filter-cutoff", "Filter Cut Off", 0 ],
 			"obj-1::obj-3::obj-84" : [ "Pitch LFO Retrigger", "Pitch LFO Retrigger", 0 ],
 			"obj-1::obj-6" : [ "chan1-enable", "chan1", 0 ],
 			"obj-1::obj-87" : [ "SEND 1[1]", "Update All", 0 ],
@@ -787,22 +787,6 @@
 					"parameter_longname" : "detune"
 				}
 ,
-				"obj-1::obj-3::obj-18" : 				{
-					"parameter_longname" : "filter-on"
-				}
-,
-				"obj-1::obj-3::obj-185" : 				{
-					"parameter_longname" : "Boost"
-				}
-,
-				"obj-1::obj-3::obj-22" : 				{
-					"parameter_longname" : "filter-rate"
-				}
-,
-				"obj-1::obj-3::obj-24" : 				{
-					"parameter_longname" : "Filter Range"
-				}
-,
 				"obj-1::obj-3::obj-32" : 				{
 					"parameter_longname" : "pitch-decay"
 				}
@@ -817,18 +801,6 @@
 ,
 				"obj-1::obj-3::obj-55" : 				{
 					"parameter_longname" : "LFO-Depth"
-				}
-,
-				"obj-1::obj-3::obj-62" : 				{
-					"parameter_longname" : "filtermode"
-				}
-,
-				"obj-1::obj-3::obj-77" : 				{
-					"parameter_longname" : "q"
-				}
-,
-				"obj-1::obj-3::obj-79" : 				{
-					"parameter_longname" : "filter-cutoff"
 				}
 ,
 				"obj-1::obj-87" : 				{
@@ -850,6 +822,13 @@
 ,
 		"dependency_cache" : [ 			{
 				"name" : "YNL-NODE-GUI.maxpat",
+				"bootpath" : "~/repos/you-never-listen/Max",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "ynl.nodefilterGUI.maxpat",
 				"bootpath" : "~/repos/you-never-listen/Max",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
