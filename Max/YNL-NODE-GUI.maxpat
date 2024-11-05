@@ -1665,7 +1665,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-3", 0 ],
-					"order" : 0,
+					"order" : 1,
 					"source" : [ "obj-87", 0 ]
 				}
 
@@ -1673,7 +1673,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-36", 0 ],
-					"order" : 2,
+					"order" : 0,
 					"source" : [ "obj-87", 0 ]
 				}
 
@@ -1681,7 +1681,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-92", 0 ],
-					"order" : 1,
+					"order" : 2,
 					"source" : [ "obj-87", 0 ]
 				}
 
@@ -1699,6 +1699,7 @@
 			"obj-14" : [ "chan2-enable", "chan2", 0 ],
 			"obj-27" : [ "Stop Notes", "Stop Notes", 0 ],
 			"obj-36::obj-18" : [ "Filter Enable", "Filter Enable", 0 ],
+			"obj-36::obj-185" : [ "Filter Clip", "Clip", 0 ],
 			"obj-36::obj-22" : [ "Filter Rate", "Filter Rate", 0 ],
 			"obj-36::obj-24" : [ "Filter LFO Range", "Filter LFO Range", 0 ],
 			"obj-36::obj-61" : [ "Filter LFO Retrigger[1]", "Filter LFO Retrigger", 0 ],
@@ -1716,7 +1717,6 @@
 			"obj-3::obj-173" : [ "Decay", "Decay", 0 ],
 			"obj-3::obj-174" : [ "Attack", "Amp Attack", 0 ],
 			"obj-3::obj-175" : [ "Sustain", "Sustain", 0 ],
-			"obj-3::obj-185" : [ "Filter Clip", "Clip", 0 ],
 			"obj-3::obj-32" : [ "pitch-decay", "Pitch Decay", 0 ],
 			"obj-3::obj-47" : [ "pitch-start[1]", "Pitch Start", 0 ],
 			"obj-3::obj-51" : [ "Glide", "Glide", 0 ],

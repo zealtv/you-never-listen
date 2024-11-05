@@ -3,8 +3,8 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 8,
-			"minor" : 5,
-			"revision" : 7,
+			"minor" : 6,
+			"revision" : 5,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
@@ -93,6 +93,7 @@
 							"parameter_longname" : "live.gain~[2]",
 							"parameter_mmax" : 6.0,
 							"parameter_mmin" : -70.0,
+							"parameter_modmode" : 0,
 							"parameter_shortname" : "live.gain~",
 							"parameter_type" : 0,
 							"parameter_unitstyle" : 4
@@ -110,7 +111,7 @@
 					"fontname" : "Arial",
 					"fontsize" : 13.0,
 					"id" : "obj-22",
-					"items" : [ "IAC Driver Bus 1", ",", "from Max 1", ",", "from Max 2", ",", "to Max 1", ",", "to Max 2" ],
+					"items" : [ "IAC Driver Bus 1", ",", "nanoKEY2 KEYBOARD", ",", "to Max 1", ",", "to Max 2" ],
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
@@ -132,7 +133,7 @@
 					"patching_rect" : [ 737.0, 559.0, 92.5, 22.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 12.0, 107.0, 56.5, 22.0 ],
-					"text" : "60 0"
+					"text" : "64 0"
 				}
 
 			}
@@ -291,308 +292,8 @@
 					"outlettype" : [ "signal", "signal", "list" ],
 					"patching_rect" : [ 30.0, 387.0, 259.0, 26.0 ],
 					"rnboattrcache" : 					{
-						"chan1/sampler/sample-loopstart" : 						{
-							"label" : "sample-loopstart",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"chan1/sampler/sample-loopduration" : 						{
-							"label" : "sample-loopduration",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"chan2/synth/pitchlfo-depth" : 						{
-							"label" : "pitchlfo-depth",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"chan1/sampler/gain" : 						{
-							"label" : "gain",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"chan1/synth/glide" : 						{
-							"label" : "glide",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"chan2/synth/pitchlfo-freq" : 						{
-							"label" : "pitchlfo-freq",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"chan1/synth/pitchlfo-retrigger" : 						{
-							"label" : "pitchlfo-retrigger",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"chan1/synth/gain" : 						{
-							"label" : "gain",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"chan2/synth/glide" : 						{
-							"label" : "glide",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"chan1/sampler/sample-start" : 						{
-							"label" : "sample-start",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"chan2/sampler/sample-loopduration" : 						{
-							"label" : "sample-loopduration",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"chan2/synth/release" : 						{
-							"label" : "release",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"chan1/synth/decay" : 						{
-							"label" : "decay",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"chan2/synth/osc-gain" : 						{
-							"label" : "osc-gain",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"chan1/synth/pitchlfo-freq" : 						{
-							"label" : "pitchlfo-freq",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"chan2/synth/osc-freq" : 						{
-							"label" : "osc-freq",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"chan1/synth/release" : 						{
-							"label" : "release",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"chan2/synth/attack" : 						{
-							"label" : "attack",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"chan2/synth/pitchlfo-retrigger" : 						{
-							"label" : "pitchlfo-retrigger",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
 						"chan1/synth/noise" : 						{
 							"label" : "noise",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"chan2/sampler/sample-start" : 						{
-							"label" : "sample-start",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"chan2/synth/pitch-decay" : 						{
-							"label" : "pitch-decay",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"chan2/synth/lfo-freq" : 						{
-							"label" : "lfo-freq",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"chan2/synth/noise" : 						{
-							"label" : "noise",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"chan1/synth/pitch-decay" : 						{
-							"label" : "pitch-decay",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"chan1/synth/pitch-start" : 						{
-							"label" : "pitch-start",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"chan2/synth/pitch-start" : 						{
-							"label" : "pitch-start",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"chan2/synth/gain" : 						{
-							"label" : "gain",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"chan1/synth/gainlfo-retrigger" : 						{
-							"label" : "gainlfo-retrigger",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"chan1/oscnoteon" : 						{
-							"label" : "oscnoteon",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"chan1/synth/detune" : 						{
-							"label" : "detune",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"chan1/synth/lfo-depth" : 						{
-							"label" : "lfo-depth",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"chan2/sampler/sample-id" : 						{
-							"label" : "sample-id",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"chan2/sampler/gain" : 						{
-							"label" : "gain",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"chan1/synth/pitchlfo-depth" : 						{
-							"label" : "pitchlfo-depth",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"chan2/synth/decay" : 						{
-							"label" : "decay",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"chan1/synth/osc-gain" : 						{
-							"label" : "osc-gain",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"chan1/sampler/sample-id" : 						{
-							"label" : "sample-id",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"chan2/master" : 						{
-							"label" : "master",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"chan1/synth/attack" : 						{
-							"label" : "attack",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"chan2/synth/gainlfo-retrigger" : 						{
-							"label" : "gainlfo-retrigger",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"chan2/synth/lfo-depth" : 						{
-							"label" : "lfo-depth",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"chan1/master" : 						{
-							"label" : "master",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"chan1/synth/sustain" : 						{
-							"label" : "sustain",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"chan2/synth/sustain" : 						{
-							"label" : "sustain",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"chan1/synth/osc-freq" : 						{
-							"label" : "osc-freq",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"chan2/sampler/sample-loopstart" : 						{
-							"label" : "sample-loopstart",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"chan1/oscnoteoff" : 						{
-							"label" : "oscnoteoff",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"chan1/synth/lfo-freq" : 						{
-							"label" : "lfo-freq",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"chan2/oscnoteoff" : 						{
-							"label" : "oscnoteoff",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"chan2/oscnoteon" : 						{
-							"label" : "oscnoteon",
 							"isEnum" : 0,
 							"parsestring" : ""
 						}
@@ -603,26 +304,8 @@
 							"parsestring" : ""
 						}
 ,
-						"chan1/filter-on" : 						{
-							"label" : "filter-on",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"chan1/boost" : 						{
-							"label" : "boost",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"chan1/filter-rate" : 						{
-							"label" : "filter-rate",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"chan1/center-frequency" : 						{
-							"label" : "center-frequency",
+						"chan1/synth/pitch-decay" : 						{
+							"label" : "pitch-decay",
 							"isEnum" : 0,
 							"parsestring" : ""
 						}
@@ -633,26 +316,14 @@
 							"parsestring" : ""
 						}
 ,
-						"chan1/filter-q" : 						{
-							"label" : "filter-q",
+						"chan1/oscnoteon" : 						{
+							"label" : "oscnoteon",
 							"isEnum" : 0,
 							"parsestring" : ""
 						}
 ,
-						"chan1/filterlfo-retrigger" : 						{
-							"label" : "filterlfo-retrigger",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"chan2/filter-on" : 						{
-							"label" : "filter-on",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"chan2/boost" : 						{
-							"label" : "boost",
+						"chan2/synth/pitchlfo-depth" : 						{
+							"label" : "pitchlfo-depth",
 							"isEnum" : 0,
 							"parsestring" : ""
 						}
@@ -663,14 +334,80 @@
 							"parsestring" : ""
 						}
 ,
-						"chan2/center-frequency" : 						{
-							"label" : "center-frequency",
+						"chan1/synth/pitchlfo-depth" : 						{
+							"label" : "pitchlfo-depth",
 							"isEnum" : 0,
 							"parsestring" : ""
 						}
 ,
-						"chan2/filter-range" : 						{
-							"label" : "filter-range",
+						"chan1/synth/gain" : 						{
+							"label" : "gain",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"chan1/synth/attack" : 						{
+							"label" : "attack",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"chan1/synth/decay" : 						{
+							"label" : "decay",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"chan2/synth/sustain" : 						{
+							"label" : "sustain",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"chan2/synth/attack" : 						{
+							"label" : "attack",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"chan2/oscnoteoff" : 						{
+							"label" : "oscnoteoff",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"chan2/synth/lfo-freq" : 						{
+							"label" : "lfo-freq",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"chan1/filter-rate" : 						{
+							"label" : "filter-rate",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"chan2/synth/gain" : 						{
+							"label" : "gain",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"chan2/filter-on" : 						{
+							"label" : "filter-on",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"chan2/sampler/sample-id" : 						{
+							"label" : "sample-id",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"chan2/synth/pitchlfo-freq" : 						{
+							"label" : "pitchlfo-freq",
 							"isEnum" : 0,
 							"parsestring" : ""
 						}
@@ -681,8 +418,272 @@
 							"parsestring" : ""
 						}
 ,
+						"chan1/sampler/sample-id" : 						{
+							"label" : "sample-id",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"chan2/sampler/sample-loopduration" : 						{
+							"label" : "sample-loopduration",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"chan1/master" : 						{
+							"label" : "master",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"chan2/synth/osc-freq" : 						{
+							"label" : "osc-freq",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"chan1/oscnoteoff" : 						{
+							"label" : "oscnoteoff",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"chan2/sampler/sample-start" : 						{
+							"label" : "sample-start",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"chan1/filter-on" : 						{
+							"label" : "filter-on",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"chan1/synth/pitch-start" : 						{
+							"label" : "pitch-start",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"chan1/sampler/sample-loopstart" : 						{
+							"label" : "sample-loopstart",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"chan1/filter-q" : 						{
+							"label" : "filter-q",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"chan1/synth/detune" : 						{
+							"label" : "detune",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"chan1/sampler/gain" : 						{
+							"label" : "gain",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"chan2/center-frequency" : 						{
+							"label" : "center-frequency",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"chan2/synth/decay" : 						{
+							"label" : "decay",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"chan2/synth/glide" : 						{
+							"label" : "glide",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"chan2/synth/gainlfo-retrigger" : 						{
+							"label" : "gainlfo-retrigger",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"chan2/synth/osc-gain" : 						{
+							"label" : "osc-gain",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"chan1/synth/osc-freq" : 						{
+							"label" : "osc-freq",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"chan2/synth/pitchlfo-retrigger" : 						{
+							"label" : "pitchlfo-retrigger",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"chan2/oscnoteon" : 						{
+							"label" : "oscnoteon",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"chan2/synth/noise" : 						{
+							"label" : "noise",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"chan1/center-frequency" : 						{
+							"label" : "center-frequency",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"chan1/synth/gainlfo-retrigger" : 						{
+							"label" : "gainlfo-retrigger",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"chan1/sampler/sample-loopduration" : 						{
+							"label" : "sample-loopduration",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"chan2/boost" : 						{
+							"label" : "boost",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"chan2/sampler/gain" : 						{
+							"label" : "gain",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"chan1/synth/pitchlfo-retrigger" : 						{
+							"label" : "pitchlfo-retrigger",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
 						"chan2/filterlfo-retrigger" : 						{
 							"label" : "filterlfo-retrigger",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"chan2/master" : 						{
+							"label" : "master",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"chan2/synth/release" : 						{
+							"label" : "release",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"chan1/synth/sustain" : 						{
+							"label" : "sustain",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"chan1/synth/release" : 						{
+							"label" : "release",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"chan1/synth/lfo-freq" : 						{
+							"label" : "lfo-freq",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"chan2/synth/pitch-decay" : 						{
+							"label" : "pitch-decay",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"chan1/boost" : 						{
+							"label" : "boost",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"chan2/synth/pitch-start" : 						{
+							"label" : "pitch-start",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"chan1/filterlfo-retrigger" : 						{
+							"label" : "filterlfo-retrigger",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"chan1/synth/lfo-depth" : 						{
+							"label" : "lfo-depth",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"chan1/synth/glide" : 						{
+							"label" : "glide",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"chan2/filter-range" : 						{
+							"label" : "filter-range",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"chan1/synth/osc-gain" : 						{
+							"label" : "osc-gain",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"chan1/sampler/sample-start" : 						{
+							"label" : "sample-start",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"chan2/synth/lfo-depth" : 						{
+							"label" : "lfo-depth",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"chan1/synth/pitchlfo-freq" : 						{
+							"label" : "pitchlfo-freq",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"chan2/sampler/sample-loopstart" : 						{
+							"label" : "sample-loopstart",
 							"isEnum" : 0,
 							"parsestring" : ""
 						}
@@ -701,11 +702,12 @@
 
 					}
 ,
-					"rnboversion" : "1.2.3",
+					"rnboversion" : "1.3.3",
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_invisible" : 1,
 							"parameter_longname" : "rnbo~[4]",
+							"parameter_modmode" : 0,
 							"parameter_shortname" : "rnbo~[4]",
 							"parameter_type" : 3
 						}
@@ -771,7 +773,7 @@
 											}
 ,
 											"sample-id" : 											{
-												"value" : 1.0
+												"value" : 3.0
 											}
 
 										}
@@ -782,7 +784,7 @@
 											}
 ,
 											"release" : 											{
-												"value" : 10.0
+												"value" : 50.0
 											}
 ,
 											"pitchlfo-retrigger" : 											{
@@ -794,7 +796,7 @@
 											}
 ,
 											"attack" : 											{
-												"value" : 10.0
+												"value" : 0.0
 											}
 ,
 											"pitchlfo-depth" : 											{
@@ -810,23 +812,23 @@
 											}
 ,
 											"decay" : 											{
-												"value" : 10.0
+												"value" : 5653.182300000000396
 											}
 ,
 											"lfo-freq" : 											{
-												"value" : 0.1
+												"value" : 0.0
 											}
 ,
 											"pitchlfo-freq" : 											{
-												"value" : 0.1
+												"value" : 0.0
 											}
 ,
 											"sustain" : 											{
-												"value" : 0.9
+												"value" : 0.8458
 											}
 ,
 											"pitch-decay" : 											{
-												"value" : 50.0
+												"value" : 0.0
 											}
 ,
 											"noise" : 											{
@@ -862,11 +864,11 @@
 									}
 ,
 									"filter-range" : 									{
-										"value" : 9.0
+										"value" : 0.0
 									}
 ,
 									"center-frequency" : 									{
-										"value" : 5059.072900000000118
+										"value" : 20.0
 									}
 ,
 									"oscnoteoff" : 									{
@@ -874,15 +876,15 @@
 									}
 ,
 									"filter-mode" : 									{
-										"value" : 1.0
+										"value" : 0.0
 									}
 ,
 									"filter-rate" : 									{
-										"value" : 0.0351
+										"value" : 0.0
 									}
 ,
 									"boost" : 									{
-										"value" : 0.252
+										"value" : 0.0
 									}
 ,
 									"oscnoteon" : 									{
@@ -929,7 +931,7 @@
 											}
 ,
 											"gain" : 											{
-												"value" : 1.0
+												"value" : 0.0
 											}
 ,
 											"sample-loopduration" : 											{
@@ -976,11 +978,11 @@
 											}
 ,
 											"osc-gain" : 											{
-												"value" : 0.0
+												"value" : 1.0
 											}
 ,
 											"decay" : 											{
-												"value" : 600.0
+												"value" : 5653.182300000000396
 											}
 ,
 											"lfo-freq" : 											{
@@ -992,7 +994,7 @@
 											}
 ,
 											"sustain" : 											{
-												"value" : 0.0
+												"value" : 0.8458
 											}
 ,
 											"pitch-decay" : 											{
@@ -1032,11 +1034,11 @@
 									}
 ,
 									"filter-range" : 									{
-										"value" : 9.0
+										"value" : 0.0
 									}
 ,
 									"center-frequency" : 									{
-										"value" : 5059.072900000000118
+										"value" : 20.0
 									}
 ,
 									"oscnoteoff" : 									{
@@ -1044,15 +1046,15 @@
 									}
 ,
 									"filter-mode" : 									{
-										"value" : 1.0
+										"value" : 0.0
 									}
 ,
 									"filter-rate" : 									{
-										"value" : 0.0351
+										"value" : 0.0
 									}
 ,
 									"boost" : 									{
-										"value" : 0.252
+										"value" : 0.0
 									}
 ,
 									"oscnoteon" : 									{
@@ -1129,7 +1131,7 @@
 														}
 ,
 														"sample-id" : 														{
-															"value" : 1.0
+															"value" : 3.0
 														}
 
 													}
@@ -1140,7 +1142,7 @@
 														}
 ,
 														"release" : 														{
-															"value" : 10.0
+															"value" : 50.0
 														}
 ,
 														"pitchlfo-retrigger" : 														{
@@ -1152,7 +1154,7 @@
 														}
 ,
 														"attack" : 														{
-															"value" : 10.0
+															"value" : 0.0
 														}
 ,
 														"pitchlfo-depth" : 														{
@@ -1168,23 +1170,23 @@
 														}
 ,
 														"decay" : 														{
-															"value" : 10.0
+															"value" : 5653.182300000000396
 														}
 ,
 														"lfo-freq" : 														{
-															"value" : 0.1
+															"value" : 0.0
 														}
 ,
 														"pitchlfo-freq" : 														{
-															"value" : 0.1
+															"value" : 0.0
 														}
 ,
 														"sustain" : 														{
-															"value" : 0.9
+															"value" : 0.8458
 														}
 ,
 														"pitch-decay" : 														{
-															"value" : 50.0
+															"value" : 0.0
 														}
 ,
 														"noise" : 														{
@@ -1220,11 +1222,11 @@
 												}
 ,
 												"filter-range" : 												{
-													"value" : 9.0
+													"value" : 0.0
 												}
 ,
 												"center-frequency" : 												{
-													"value" : 5059.072900000000118
+													"value" : 20.0
 												}
 ,
 												"oscnoteoff" : 												{
@@ -1232,15 +1234,15 @@
 												}
 ,
 												"filter-mode" : 												{
-													"value" : 1.0
+													"value" : 0.0
 												}
 ,
 												"filter-rate" : 												{
-													"value" : 0.0351
+													"value" : 0.0
 												}
 ,
 												"boost" : 												{
-													"value" : 0.252
+													"value" : 0.0
 												}
 ,
 												"oscnoteon" : 												{
@@ -1287,7 +1289,7 @@
 														}
 ,
 														"gain" : 														{
-															"value" : 1.0
+															"value" : 0.0
 														}
 ,
 														"sample-loopduration" : 														{
@@ -1334,11 +1336,11 @@
 														}
 ,
 														"osc-gain" : 														{
-															"value" : 0.0
+															"value" : 1.0
 														}
 ,
 														"decay" : 														{
-															"value" : 600.0
+															"value" : 5653.182300000000396
 														}
 ,
 														"lfo-freq" : 														{
@@ -1350,7 +1352,7 @@
 														}
 ,
 														"sustain" : 														{
-															"value" : 0.0
+															"value" : 0.8458
 														}
 ,
 														"pitch-decay" : 														{
@@ -1390,11 +1392,11 @@
 												}
 ,
 												"filter-range" : 												{
-													"value" : 9.0
+													"value" : 0.0
 												}
 ,
 												"center-frequency" : 												{
-													"value" : 5059.072900000000118
+													"value" : 20.0
 												}
 ,
 												"oscnoteoff" : 												{
@@ -1402,15 +1404,15 @@
 												}
 ,
 												"filter-mode" : 												{
-													"value" : 1.0
+													"value" : 0.0
 												}
 ,
 												"filter-rate" : 												{
-													"value" : 0.0351
+													"value" : 0.0
 												}
 ,
 												"boost" : 												{
-													"value" : 0.252
+													"value" : 0.0
 												}
 ,
 												"oscnoteon" : 												{
@@ -1536,8 +1538,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 5,
-							"revision" : 7,
+							"minor" : 6,
+							"revision" : 5,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -2088,8 +2090,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 5,
-							"revision" : 7,
+							"minor" : 6,
+							"revision" : 5,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -2400,8 +2402,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 5,
-							"revision" : 7,
+							"minor" : 6,
+							"revision" : 5,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -2442,6 +2444,7 @@
 						"color" : [ 0.929412, 0.929412, 0.352941, 1.0 ],
 						"elementcolor" : [ 0.357540726661682, 0.515565991401672, 0.861786782741547, 1.0 ],
 						"accentcolor" : [ 0.343034118413925, 0.506230533123016, 0.86220508813858, 1.0 ],
+						"textcolor_inverse" : [ 0.968627, 0.968627, 0.968627, 1.0 ],
 						"stripecolor" : [ 0.258338063955307, 0.352425158023834, 0.511919498443604, 1.0 ],
 						"bgfillcolor_type" : "color",
 						"bgfillcolor_color" : [ 0.031372549019608, 0.125490196078431, 0.211764705882353, 1.0 ],
@@ -2457,11 +2460,12 @@
 
 					}
 ,
-					"rnboversion" : "1.2.3",
+					"rnboversion" : "1.3.3",
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_invisible" : 1,
 							"parameter_longname" : "rnbo~[10]",
+							"parameter_modmode" : 0,
 							"parameter_shortname" : "rnbo~[2]",
 							"parameter_type" : 3
 						}
@@ -2607,8 +2611,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 5,
-							"revision" : 7,
+							"minor" : 6,
+							"revision" : 5,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -2864,8 +2868,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 5,
-							"revision" : 7,
+							"minor" : 6,
+							"revision" : 5,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -3116,8 +3120,20 @@
 							"parsestring" : ""
 						}
 ,
+						"diff" : 						{
+							"label" : "diff",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
 						"damp" : 						{
 							"label" : "damp",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"size" : 						{
+							"label" : "size",
 							"isEnum" : 0,
 							"parsestring" : ""
 						}
@@ -3133,26 +3149,15 @@
 							"isEnum" : 0,
 							"parsestring" : ""
 						}
-,
-						"diff" : 						{
-							"label" : "diff",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"size" : 						{
-							"label" : "size",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
 
 					}
 ,
-					"rnboversion" : "1.2.3",
+					"rnboversion" : "1.3.3",
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_invisible" : 1,
 							"parameter_longname" : "rnbo~[1]",
+							"parameter_modmode" : 0,
 							"parameter_shortname" : "rnbo~",
 							"parameter_type" : 3
 						}
@@ -4827,9 +4832,9 @@
 		"parameters" : 		{
 			"obj-12::obj-1::obj-32" : [ "MIDI", "MIDI", 0 ],
 			"obj-32" : [ "rnbo~[4]", "rnbo~[4]", 0 ],
-			"obj-41::obj-11" : [ "master", "Master", 0 ],
+			"obj-41::obj-11" : [ "master", "Master Gain", 0 ],
 			"obj-41::obj-14" : [ "chan2-enable", "chan2", 0 ],
-			"obj-41::obj-27" : [ "Stop Notes", "Stop", 0 ],
+			"obj-41::obj-27" : [ "Stop Notes", "Stop Notes", 0 ],
 			"obj-41::obj-36::obj-18" : [ "Filter Enable", "Filter Enable", 0 ],
 			"obj-41::obj-36::obj-185" : [ "Clip", "Clip", 0 ],
 			"obj-41::obj-36::obj-22" : [ "Filter Rate", "Filter Rate", 0 ],
@@ -4837,7 +4842,7 @@
 			"obj-41::obj-36::obj-61" : [ "Filter LFO Retrigger[1]", "Filter LFO Retrigger", 0 ],
 			"obj-41::obj-36::obj-62" : [ "Filter Mode", "Filter Mode", 0 ],
 			"obj-41::obj-36::obj-77" : [ "Filter Q", "Filter Q", 0 ],
-			"obj-41::obj-36::obj-79" : [ "Filter Cut Off", "Filter Cut Off", 0 ],
+			"obj-41::obj-36::obj-79" : [ "Filter Cut Off", "Filter Freq", 0 ],
 			"obj-41::obj-3::obj-110" : [ "Gain[3]", "Gain", 0 ],
 			"obj-41::obj-3::obj-114" : [ "osc-freq[2]", "Osc Freq", 0 ],
 			"obj-41::obj-3::obj-119" : [ "noise", "Noise", 0 ],
@@ -4847,14 +4852,14 @@
 			"obj-41::obj-3::obj-144" : [ "Pitch-LFO-Depth[1]", "Pitch LFO Depth", 0 ],
 			"obj-41::obj-3::obj-172" : [ "Release", "Release", 0 ],
 			"obj-41::obj-3::obj-173" : [ "Decay", "Decay", 0 ],
-			"obj-41::obj-3::obj-174" : [ "Attack", "Attack", 0 ],
+			"obj-41::obj-3::obj-174" : [ "Attack", "Amp Attack", 0 ],
 			"obj-41::obj-3::obj-175" : [ "Sustain", "Sustain", 0 ],
 			"obj-41::obj-3::obj-32" : [ "pitch-decay[1]", "Pitch Decay", 0 ],
 			"obj-41::obj-3::obj-47" : [ "pitch-start[2]", "Pitch Start", 0 ],
 			"obj-41::obj-3::obj-51" : [ "Glide[1]", "Glide", 0 ],
-			"obj-41::obj-3::obj-53" : [ "LFO-Freq", "Gain LFO Freq", 0 ],
-			"obj-41::obj-3::obj-55" : [ "LFO-Depth", "Gain LFO Depth", 0 ],
-			"obj-41::obj-3::obj-78" : [ "Gain LFO Retrigger", "Gain LFO Retrigger", 0 ],
+			"obj-41::obj-3::obj-53" : [ "LFO-Freq", "Amp LFO Freq", 0 ],
+			"obj-41::obj-3::obj-55" : [ "LFO-Depth", "Amp LFO Depth", 0 ],
+			"obj-41::obj-3::obj-78" : [ "Gain LFO Retrigger", "Amp LFO Retrigger", 0 ],
 			"obj-41::obj-3::obj-84" : [ "Pitch LFO Retrigger", "Pitch LFO Retrigger", 0 ],
 			"obj-41::obj-6" : [ "chan1-enable", "chan1", 0 ],
 			"obj-41::obj-87" : [ "SEND 1[1]", "Update All", 0 ],
@@ -4886,8 +4891,20 @@
 					"parameter_longname" : "master"
 				}
 ,
+				"obj-41::obj-36::obj-185" : 				{
+					"parameter_longname" : "Clip"
+				}
+,
+				"obj-41::obj-36::obj-22" : 				{
+					"parameter_longname" : "Filter Rate"
+				}
+,
 				"obj-41::obj-36::obj-61" : 				{
 					"parameter_longname" : "Filter LFO Retrigger[1]"
+				}
+,
+				"obj-41::obj-36::obj-79" : 				{
+					"parameter_longname" : "Filter Cut Off"
 				}
 ,
 				"obj-41::obj-3::obj-110" : 				{
@@ -4918,6 +4935,10 @@
 					"parameter_longname" : "Pitch-LFO-Depth[1]"
 				}
 ,
+				"obj-41::obj-3::obj-174" : 				{
+					"parameter_longname" : "Attack"
+				}
+,
 				"obj-41::obj-3::obj-32" : 				{
 					"parameter_longname" : "pitch-decay[1]"
 				}
@@ -4938,12 +4959,24 @@
 					"parameter_longname" : "LFO-Depth"
 				}
 ,
+				"obj-41::obj-3::obj-78" : 				{
+					"parameter_longname" : "Gain LFO Retrigger"
+				}
+,
+				"obj-41::obj-3::obj-84" : 				{
+					"parameter_longname" : "Pitch LFO Retrigger"
+				}
+,
 				"obj-41::obj-87" : 				{
 					"parameter_longname" : "SEND 1[1]"
 				}
 ,
 				"obj-41::obj-92::obj-110" : 				{
 					"parameter_longname" : "Gain[4]"
+				}
+,
+				"obj-41::obj-92::obj-91" : 				{
+					"parameter_longname" : "Loop Start"
 				}
 ,
 				"obj-41::obj-92::obj-97" : 				{

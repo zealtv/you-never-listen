@@ -40,86 +40,6 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
-					"id" : "obj-70",
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 247.922229253584419, 672.0, 52.0, 22.0 ],
-					"text" : "s #0-out"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-69",
-					"maxclass" : "newobj",
-					"numinlets" : 0,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 247.922229253584419, 562.0, 71.0, 22.0 ],
-					"text" : "r #0-sendall"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-183",
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 247.922229253584419, 632.0, 85.0, 22.0 ],
-					"text" : "prepend boost"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-184",
-					"maxclass" : "live.comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 303.922229253584419, 601.0, 58.111101773049995, 18.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 499.027780022885963, 33.166701316833496, 28.055550181203444, 18.0 ],
-					"text" : "Clip",
-					"textjustification" : 0
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"appearance" : 2,
-					"id" : "obj-185",
-					"maxclass" : "live.numbox",
-					"numinlets" : 1,
-					"numoutlets" : 2,
-					"outlettype" : [ "", "float" ],
-					"parameter_enable" : 1,
-					"patching_rect" : [ 247.922229253584419, 601.0, 45.0, 15.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 431.499999999999773, 34.666701316833496, 67.0, 15.0 ],
-					"saved_attribute_attributes" : 					{
-						"valueof" : 						{
-							"parameter_initial" : [ 0.0 ],
-							"parameter_initial_enable" : 1,
-							"parameter_linknames" : 1,
-							"parameter_longname" : "Filter Clip",
-							"parameter_mmax" : 1.0,
-							"parameter_modmode" : 0,
-							"parameter_shortname" : "Clip",
-							"parameter_type" : 0,
-							"parameter_unitstyle" : 1
-						}
-
-					}
-,
-					"varname" : "Filter Clip"
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"id" : "obj-82",
 					"maxclass" : "newobj",
 					"numinlets" : 0,
@@ -2240,20 +2160,6 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-70", 0 ],
-					"source" : [ "obj-183", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-183", 0 ],
-					"source" : [ "obj-185", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-59", 0 ],
 					"source" : [ "obj-26", 0 ]
 				}
@@ -2433,13 +2339,6 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-185", 0 ],
-					"source" : [ "obj-69", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-78", 0 ],
 					"source" : [ "obj-74", 0 ]
 				}
@@ -2486,7 +2385,6 @@
 			"obj-173" : [ "Decay", "Decay", 0 ],
 			"obj-174" : [ "Amp Attack", "Amp Attack", 0 ],
 			"obj-175" : [ "Sustain", "Sustain", 0 ],
-			"obj-185" : [ "Filter Clip", "Clip", 0 ],
 			"obj-32" : [ "Synth Pitch Decay", "Pitch Decay", 0 ],
 			"obj-47" : [ "Synth Pitch Start", "Pitch Start", 0 ],
 			"obj-51" : [ "Synth Pitch Glide", "Glide", 0 ],
