@@ -3,14 +3,14 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 8,
-			"minor" : 5,
+			"minor" : 6,
 			"revision" : 5,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 431.0, 155.0, 459.0, 705.0 ],
+		"rect" : [ 34.0, 99.0, 1402.0, 823.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -154,6 +154,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
+					"parameter_mappable" : 0,
 					"patching_rect" : [ 220.0, 645.0, 50.0, 22.0 ]
 				}
 
@@ -161,7 +162,7 @@
 , 			{
 				"box" : 				{
 					"coll_data" : 					{
-						"count" : 8,
+						"count" : 16,
 						"data" : [ 							{
 								"key" : 1,
 								"value" : [ "192.168.1.101" ]
@@ -193,6 +194,38 @@
 , 							{
 								"key" : 8,
 								"value" : [ "192.168.1.108" ]
+							}
+, 							{
+								"key" : 9,
+								"value" : [ "192.168.1.109" ]
+							}
+, 							{
+								"key" : 10,
+								"value" : [ "192.168.1.110" ]
+							}
+, 							{
+								"key" : 11,
+								"value" : [ "192.168.1.111" ]
+							}
+, 							{
+								"key" : 12,
+								"value" : [ "192.168.1.112" ]
+							}
+, 							{
+								"key" : 13,
+								"value" : [ "192.168.1.113" ]
+							}
+, 							{
+								"key" : 14,
+								"value" : [ "192.168.1.114" ]
+							}
+, 							{
+								"key" : 15,
+								"value" : [ "192.168.1.115" ]
+							}
+, 							{
+								"key" : 16,
+								"value" : [ "192.168.1.116" ]
 							}
  ]
 					}
@@ -347,9 +380,11 @@
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_enum" : [ "debug off", "debug on" ],
-							"parameter_longname" : "live.text",
+							"parameter_linknames" : 1,
+							"parameter_longname" : "Debug",
 							"parameter_mmax" : 1,
-							"parameter_shortname" : "live.text",
+							"parameter_modmode" : 0,
+							"parameter_shortname" : "Debug",
 							"parameter_type" : 2
 						}
 
@@ -357,7 +392,7 @@
 ,
 					"text" : "debug",
 					"texton" : "DEBUG",
-					"varname" : "live.text"
+					"varname" : "Debug"
 				}
 
 			}
@@ -466,6 +501,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "float" ],
 					"parameter_enable" : 1,
+					"parameter_mappable" : 0,
 					"patching_rect" : [ 95.5, 426.0, 44.0, 15.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 13.666666686534882, 102.0, 44.0, 15.0 ],
@@ -474,16 +510,17 @@
 							"parameter_initial" : [ 1.0 ],
 							"parameter_initial_enable" : 1,
 							"parameter_linknames" : 1,
-							"parameter_longname" : "node",
-							"parameter_mmax" : 8.0,
-							"parameter_shortname" : "node",
+							"parameter_longname" : "Node ID",
+							"parameter_mmax" : 16.0,
+							"parameter_modmode" : 0,
+							"parameter_shortname" : "Node ID",
 							"parameter_type" : 1,
 							"parameter_unitstyle" : 0
 						}
 
 					}
 ,
-					"varname" : "node"
+					"varname" : "Node ID"
 				}
 
 			}
@@ -723,44 +760,44 @@
 			}
  ],
 		"parameters" : 		{
-			"obj-1::obj-11" : [ "master", "Master", 0 ],
-			"obj-1::obj-14" : [ "chan2-enable", "chan2", 0 ],
-			"obj-1::obj-27" : [ "Stop Notes", "Stop", 0 ],
+			"obj-1::obj-11" : [ "Master Gain", "Master Gain", 0 ],
+			"obj-1::obj-14" : [ "chan2-enable", "chan2-enable", 0 ],
+			"obj-1::obj-27" : [ "Stop Notes", "Stop Notes", 0 ],
 			"obj-1::obj-36::obj-18" : [ "Filter Enable", "Filter Enable", 0 ],
-			"obj-1::obj-36::obj-185" : [ "Clip", "Clip", 0 ],
 			"obj-1::obj-36::obj-22" : [ "Filter Rate", "Filter Rate", 0 ],
 			"obj-1::obj-36::obj-24" : [ "Filter LFO Range", "Filter LFO Range", 0 ],
 			"obj-1::obj-36::obj-61" : [ "Filter LFO Retrigger", "Filter LFO Retrigger", 0 ],
 			"obj-1::obj-36::obj-62" : [ "Filter Mode", "Filter Mode", 0 ],
 			"obj-1::obj-36::obj-77" : [ "Filter Q", "Filter Q", 0 ],
-			"obj-1::obj-36::obj-79" : [ "Filter Cut Off", "Filter Cut Off", 0 ],
-			"obj-1::obj-3::obj-110" : [ "Gain", "Gain", 0 ],
-			"obj-1::obj-3::obj-114" : [ "osc-freq[1]", "Osc Freq", 0 ],
-			"obj-1::obj-3::obj-119" : [ "noise", "Noise", 0 ],
-			"obj-1::obj-3::obj-122" : [ "Oscillator Gain", "Osc Gain", 0 ],
-			"obj-1::obj-3::obj-123" : [ "detune", "Detune", 0 ],
-			"obj-1::obj-3::obj-143" : [ "Pitch-LFO-Freq", "Pitch LFO Freq.", 0 ],
-			"obj-1::obj-3::obj-144" : [ "Pitch-LFO-Depth", "Pitch LFO Depth", 0 ],
-			"obj-1::obj-3::obj-172" : [ "Release", "Release", 0 ],
-			"obj-1::obj-3::obj-173" : [ "Decay", "Decay", 0 ],
-			"obj-1::obj-3::obj-174" : [ "Attack", "Attack", 0 ],
-			"obj-1::obj-3::obj-175" : [ "Sustain", "Sustain", 0 ],
-			"obj-1::obj-3::obj-32" : [ "pitch-decay", "Pitch Decay", 0 ],
-			"obj-1::obj-3::obj-47" : [ "pitch-start[1]", "Pitch Start", 0 ],
-			"obj-1::obj-3::obj-51" : [ "Glide", "Glide", 0 ],
-			"obj-1::obj-3::obj-53" : [ "LFO-Freq", "Gain LFO Freq", 0 ],
-			"obj-1::obj-3::obj-55" : [ "LFO-Depth", "Gain LFO Depth", 0 ],
-			"obj-1::obj-3::obj-78" : [ "Gain LFO Retrigger", "Gain LFO Retrigger", 0 ],
+			"obj-1::obj-36::obj-79" : [ "Filter Freq", "Filter Freq", 0 ],
+			"obj-1::obj-3::obj-110" : [ "Amp Gain", "Amp Gain", 0 ],
+			"obj-1::obj-3::obj-114" : [ "Synth Oscillator Freq", "Synth Oscillator Freq", 0 ],
+			"obj-1::obj-3::obj-119" : [ "Synth Noise Gain", "Synth Noise Gain", 0 ],
+			"obj-1::obj-3::obj-122" : [ "Synth Oscillator Gain", "Synth Oscillator Gain", 0 ],
+			"obj-1::obj-3::obj-123" : [ "Synth Oscillator Detune", "Synth Oscillator Detune", 0 ],
+			"obj-1::obj-3::obj-143" : [ "Pitch LFO Freq", "Pitch LFO Freq.", 0 ],
+			"obj-1::obj-3::obj-144" : [ "Pitch LFO Depth", "Pitch LFO Depth", 0 ],
+			"obj-1::obj-3::obj-172" : [ "Amp Release", "Amp Release", 0 ],
+			"obj-1::obj-3::obj-173" : [ "Amp Decay", "Amp Decay", 0 ],
+			"obj-1::obj-3::obj-174" : [ "Amp Attack", "Amp Attack", 0 ],
+			"obj-1::obj-3::obj-175" : [ "Amp Sustain", "Amp Sustain", 0 ],
+			"obj-1::obj-3::obj-185" : [ "Amp Clip", "Amp Clip", 0 ],
+			"obj-1::obj-3::obj-32" : [ "Pitch Decay", "Pitch Decay", 0 ],
+			"obj-1::obj-3::obj-47" : [ "Pitch Start Offset", "Pitch Start Offset", 0 ],
+			"obj-1::obj-3::obj-51" : [ "Pitch Glide", "Pitch Glide", 0 ],
+			"obj-1::obj-3::obj-53" : [ "Amp LFO Freq", "Amp LFO Freq", 0 ],
+			"obj-1::obj-3::obj-55" : [ "Amp LFO Depth", "Amp LFO Depth", 0 ],
+			"obj-1::obj-3::obj-78" : [ "Amp LFO Retrigger", "Amp LFO Retrigger", 0 ],
 			"obj-1::obj-3::obj-84" : [ "Pitch LFO Retrigger", "Pitch LFO Retrigger", 0 ],
-			"obj-1::obj-6" : [ "chan1-enable", "chan1", 0 ],
-			"obj-1::obj-87" : [ "SEND 1[1]", "Update All", 0 ],
+			"obj-1::obj-6" : [ "chan1-enable", "chan1-enable", 0 ],
+			"obj-1::obj-87" : [ "Update All", "Update All", 0 ],
 			"obj-1::obj-92::obj-103" : [ "Sample ID", "Sample ID", 0 ],
-			"obj-1::obj-92::obj-110" : [ "Gain[1]", "Sample Gain", 0 ],
+			"obj-1::obj-92::obj-110" : [ "Sample Gain", "Sample Gain", 0 ],
 			"obj-1::obj-92::obj-180" : [ "Sample Start", "Sample Start", 0 ],
-			"obj-1::obj-92::obj-91" : [ "Loop Start", "Loop Start", 0 ],
-			"obj-1::obj-92::obj-97" : [ "Sample End", "Duration", 0 ],
-			"obj-33" : [ "live.text", "live.text", 0 ],
-			"obj-67" : [ "node", "node", 0 ],
+			"obj-1::obj-92::obj-91" : [ "Sampler Loop Start", "Loop Start", 0 ],
+			"obj-1::obj-92::obj-97" : [ "Sample Loop Duration", "Sample Loop Duration", 0 ],
+			"obj-33" : [ "Debug", "Debug", 0 ],
+			"obj-67" : [ "Node ID", "Node ID", 0 ],
 			"parameterbanks" : 			{
 				"0" : 				{
 					"index" : 0,
@@ -772,47 +809,128 @@
 ,
 			"parameter_overrides" : 			{
 				"obj-1::obj-11" : 				{
-					"parameter_longname" : "master"
+					"parameter_longname" : "Master Gain"
+				}
+,
+				"obj-1::obj-14" : 				{
+					"parameter_shortname" : "chan2-enable"
+				}
+,
+				"obj-1::obj-36::obj-22" : 				{
+					"parameter_longname" : "Filter Rate"
+				}
+,
+				"obj-1::obj-36::obj-79" : 				{
+					"parameter_longname" : "Filter Freq"
+				}
+,
+				"obj-1::obj-3::obj-110" : 				{
+					"parameter_longname" : "Amp Gain",
+					"parameter_shortname" : "Amp Gain"
 				}
 ,
 				"obj-1::obj-3::obj-114" : 				{
-					"parameter_longname" : "osc-freq[1]"
+					"parameter_longname" : "Synth Oscillator Freq",
+					"parameter_shortname" : "Synth Oscillator Freq"
 				}
 ,
 				"obj-1::obj-3::obj-119" : 				{
-					"parameter_longname" : "noise"
+					"parameter_longname" : "Synth Noise Gain",
+					"parameter_shortname" : "Synth Noise Gain"
+				}
+,
+				"obj-1::obj-3::obj-122" : 				{
+					"parameter_longname" : "Synth Oscillator Gain",
+					"parameter_shortname" : "Synth Oscillator Gain"
 				}
 ,
 				"obj-1::obj-3::obj-123" : 				{
-					"parameter_longname" : "detune"
+					"parameter_longname" : "Synth Oscillator Detune",
+					"parameter_shortname" : "Synth Oscillator Detune"
+				}
+,
+				"obj-1::obj-3::obj-143" : 				{
+					"parameter_longname" : "Pitch LFO Freq"
+				}
+,
+				"obj-1::obj-3::obj-144" : 				{
+					"parameter_longname" : "Pitch LFO Depth"
+				}
+,
+				"obj-1::obj-3::obj-172" : 				{
+					"parameter_longname" : "Amp Release",
+					"parameter_shortname" : "Amp Release"
+				}
+,
+				"obj-1::obj-3::obj-173" : 				{
+					"parameter_longname" : "Amp Decay",
+					"parameter_shortname" : "Amp Decay"
+				}
+,
+				"obj-1::obj-3::obj-174" : 				{
+					"parameter_longname" : "Amp Attack",
+					"parameter_shortname" : "Amp Attack"
+				}
+,
+				"obj-1::obj-3::obj-175" : 				{
+					"parameter_longname" : "Amp Sustain",
+					"parameter_shortname" : "Amp Sustain"
+				}
+,
+				"obj-1::obj-3::obj-185" : 				{
+					"parameter_longname" : "Amp Clip",
+					"parameter_shortname" : "Amp Clip"
 				}
 ,
 				"obj-1::obj-3::obj-32" : 				{
-					"parameter_longname" : "pitch-decay"
+					"parameter_longname" : "Pitch Decay"
 				}
 ,
 				"obj-1::obj-3::obj-47" : 				{
-					"parameter_longname" : "pitch-start[1]"
+					"parameter_longname" : "Pitch Start Offset",
+					"parameter_shortname" : "Pitch Start Offset"
+				}
+,
+				"obj-1::obj-3::obj-51" : 				{
+					"parameter_longname" : "Pitch Glide",
+					"parameter_shortname" : "Pitch Glide"
 				}
 ,
 				"obj-1::obj-3::obj-53" : 				{
-					"parameter_longname" : "LFO-Freq"
+					"parameter_longname" : "Amp LFO Freq"
 				}
 ,
 				"obj-1::obj-3::obj-55" : 				{
-					"parameter_longname" : "LFO-Depth"
+					"parameter_longname" : "Amp LFO Depth"
+				}
+,
+				"obj-1::obj-3::obj-78" : 				{
+					"parameter_longname" : "Amp LFO Retrigger"
+				}
+,
+				"obj-1::obj-3::obj-84" : 				{
+					"parameter_longname" : "Pitch LFO Retrigger"
+				}
+,
+				"obj-1::obj-6" : 				{
+					"parameter_shortname" : "chan1-enable"
 				}
 ,
 				"obj-1::obj-87" : 				{
-					"parameter_longname" : "SEND 1[1]"
+					"parameter_longname" : "Update All"
 				}
 ,
 				"obj-1::obj-92::obj-110" : 				{
-					"parameter_longname" : "Gain[1]"
+					"parameter_longname" : "Sample Gain"
+				}
+,
+				"obj-1::obj-92::obj-91" : 				{
+					"parameter_longname" : "Sampler Loop Start"
 				}
 ,
 				"obj-1::obj-92::obj-97" : 				{
-					"parameter_longname" : "Sample End"
+					"parameter_longname" : "Sample Loop Duration",
+					"parameter_shortname" : "Sample Loop Duration"
 				}
 
 			}

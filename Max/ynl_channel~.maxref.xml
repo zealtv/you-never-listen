@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!--If you edit this file, please place it in a safe place since future exports will overwrite this automatically generated reference file.-->
+<c74object name="ynl_channel~">
+<metadatalist>
+<metadata name="tag">audio</metadata>
+</metadatalist>
+<methodlist>
+<method name="message"><digest>message input</digest><description>message input</description></method>
+</methodlist>
+<attributelist>
+<attribute name="filter-on" get="1" set="1" size="1" type="float64">
+<digest>filter-on</digest>
+</attribute>
+<attribute name="master" get="1" set="1" size="1" type="float64">
+<digest>master</digest>
+</attribute>
+<attribute name="oscnoteon" get="1" set="1" size="1" type="float64">
+<digest>oscnoteon</digest>
+</attribute>
+<attribute name="boost" get="1" set="1" size="1" type="float64">
+<digest>boost</digest>
+</attribute>
+<attribute name="filter-mode" get="1" set="1" size="1" type="float64">
+<digest>filter-mode</digest>
+</attribute>
+<attribute name="oscnoteoff" get="1" set="1" size="1" type="float64">
+<digest>oscnoteoff</digest>
+</attribute>
+<attribute name="filter-rate" get="1" set="1" size="1" type="float64">
+<digest>filter-rate</digest>
+</attribute>
+<attribute name="center-frequency" get="1" set="1" size="1" type="float64">
+<digest>center-frequency</digest>
+</attribute>
+<attribute name="filter-range" get="1" set="1" size="1" type="float64">
+<digest>filter-range</digest>
+</attribute>
+<attribute name="filter-q" get="1" set="1" size="1" type="float64">
+<digest>filter-q</digest>
+</attribute>
+<attribute name="filterlfo-retrigger" get="1" set="1" size="1" type="float64">
+<digest>filterlfo-retrigger</digest>
+</attribute>
+<attribute name="synth/pitch-start" get="1" set="1" size="1" type="float64">
+<digest>pitch-start</digest>
+</attribute>
+<attribute name="synth/glide" get="1" set="1" size="1" type="float64">
+<digest>glide</digest>
+</attribute>
+<attribute name="synth/osc-freq" get="1" set="1" size="1" type="float64">
+<digest>osc-freq</digest>
+</attribute>
+<attribute name="synth/pitchlfo-freq" get="1" set="1" size="1" type="float64">
+<digest>pitchlfo-freq</digest>
+</attribute>
+<attribute name="synth/gain" get="1" set="1" size="1" type="float64">
+<digest>gain</digest>
+</attribute>
+<attribute name="synth/detune" get="1" set="1" size="1" type="float64">
+<digest>detune</digest>
+</attribute>
+<attribute name="synth/lfo-freq" get="1" set="1" size="1" type="float64">
+<digest>lfo-freq</digest>
+</attribute>
+<attribute name="synth/pitchlfo-depth" get="1" set="1" size="1" type="float64">
+<digest>pitchlfo-depth</digest>
+</attribute>
+<attribute name="synth/lfo-depth" get="1" set="1" size="1" type="float64">
+<digest>lfo-depth</digest>
+</attribute>
+<attribute name="synth/osc-gain" get="1" set="1" size="1" type="float64">
+<digest>osc-gain</digest>
+</attribute>
+<attribute name="synth/pitch-decay" get="1" set="1" size="1" type="float64">
+<digest>pitch-decay</digest>
+</attribute>
+<attribute name="synth/noise" get="1" set="1" size="1" type="float64">
+<digest>noise</digest>
+</attribute>
+<attribute name="synth/pitchlfo-retrigger" get="1" set="1" size="1" type="float64">
+<digest>pitchlfo-retrigger</digest>
+</attribute>
+<attribute name="synth/gainlfo-retrigger" get="1" set="1" size="1" type="float64">
+<digest>gainlfo-retrigger</digest>
+</attribute>
+<attribute name="synth/attack" get="1" set="1" size="1" type="float64">
+<digest>attack</digest>
+</attribute>
+<attribute name="synth/decay" get="1" set="1" size="1" type="float64">
+<digest>decay</digest>
+</attribute>
+<attribute name="synth/sustain" get="1" set="1" size="1" type="float64">
+<digest>sustain</digest>
+</attribute>
+<attribute name="synth/release" get="1" set="1" size="1" type="float64">
+<digest>release</digest>
+</attribute>
+<attribute name="sampler/sample-id" get="1" set="1" size="1" type="float64">
+<digest>sample-id</digest>
+</attribute>
+<attribute name="sampler/gain" get="1" set="1" size="1" type="float64">
+<digest>gain</digest>
+</attribute>
+<attribute name="sampler/sample-start" get="1" set="1" size="1" type="float64">
+<digest>sample-start</digest>
+</attribute>
+<attribute name="sampler/sample-loopstart" get="1" set="1" size="1" type="float64">
+<digest>sample-loopstart</digest>
+</attribute>
+<attribute name="sampler/sample-loopduration" get="1" set="1" size="1" type="float64">
+<digest>sample-loopduration</digest>
+</attribute>
+<attribute name="buff1" get="1" set="1" size="1" type="symbol">
+<digest>Map buffer by name</digest>
+<description>The value of this attribute indicates the max buffer that this object will use for its internal buffer named "buff1"</description>
+</attribute>
+<attribute name="buff2" get="1" set="1" size="1" type="symbol">
+<digest>Map buffer by name</digest>
+<description>The value of this attribute indicates the max buffer that this object will use for its internal buffer named "buff2"</description>
+</attribute>
+<attribute name="buff3" get="1" set="1" size="1" type="symbol">
+<digest>Map buffer by name</digest>
+<description>The value of this attribute indicates the max buffer that this object will use for its internal buffer named "buff3"</description>
+</attribute>
+<attribute name="buff4" get="1" set="1" size="1" type="symbol">
+<digest>Map buffer by name</digest>
+<description>The value of this attribute indicates the max buffer that this object will use for its internal buffer named "buff4"</description>
+</attribute>
+<attribute name="buff5" get="1" set="1" size="1" type="symbol">
+<digest>Map buffer by name</digest>
+<description>The value of this attribute indicates the max buffer that this object will use for its internal buffer named "buff5"</description>
+</attribute>
+</attributelist>
+</c74object>

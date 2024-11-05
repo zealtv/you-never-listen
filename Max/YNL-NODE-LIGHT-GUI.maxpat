@@ -3,8 +3,8 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 8,
-			"minor" : 5,
-			"revision" : 6,
+			"minor" : 6,
+			"revision" : 5,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
@@ -95,6 +95,7 @@
 							"parameter_linknames" : 1,
 							"parameter_longname" : "MIDI Trigger Enable",
 							"parameter_mmax" : 1,
+							"parameter_modmode" : 0,
 							"parameter_shortname" : "MIDI Trigger",
 							"parameter_type" : 2
 						}
@@ -386,6 +387,7 @@
 							"parameter_linknames" : 1,
 							"parameter_longname" : "chan2-enable",
 							"parameter_mmax" : 1,
+							"parameter_modmode" : 0,
 							"parameter_shortname" : "chan2",
 							"parameter_type" : 2
 						}
@@ -419,6 +421,7 @@
 							"parameter_linknames" : 1,
 							"parameter_longname" : "chan1-enable",
 							"parameter_mmax" : 1,
+							"parameter_modmode" : 0,
 							"parameter_shortname" : "chan1",
 							"parameter_type" : 2
 						}
@@ -461,8 +464,9 @@
 							"parameter_initial_enable" : 1,
 							"parameter_linknames" : 1,
 							"parameter_longname" : "Node",
-							"parameter_mmax" : 8.0,
+							"parameter_mmax" : 16.0,
 							"parameter_mmin" : 1.0,
+							"parameter_modmode" : 0,
 							"parameter_shortname" : "Node",
 							"parameter_type" : 1,
 							"parameter_unitstyle" : 0
@@ -506,6 +510,7 @@
 							"parameter_linknames" : 1,
 							"parameter_longname" : "Go",
 							"parameter_mmax" : 1,
+							"parameter_modmode" : 0,
 							"parameter_shortname" : "Go",
 							"parameter_type" : 2
 						}
@@ -550,6 +555,7 @@
 							"parameter_linknames" : 1,
 							"parameter_longname" : "Sustain",
 							"parameter_mmax" : 20000.0,
+							"parameter_modmode" : 0,
 							"parameter_shortname" : "Sustain",
 							"parameter_type" : 0,
 							"parameter_unitstyle" : 2
@@ -593,6 +599,7 @@
 							"parameter_linknames" : 1,
 							"parameter_longname" : "Release",
 							"parameter_mmax" : 20000.0,
+							"parameter_modmode" : 0,
 							"parameter_shortname" : "Release",
 							"parameter_type" : 0,
 							"parameter_unitstyle" : 2
@@ -636,6 +643,7 @@
 							"parameter_linknames" : 1,
 							"parameter_longname" : "Attack",
 							"parameter_mmax" : 20000.0,
+							"parameter_modmode" : 0,
 							"parameter_shortname" : "Attack",
 							"parameter_type" : 0,
 							"parameter_unitstyle" : 2

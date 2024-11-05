@@ -3,14 +3,14 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 8,
-			"minor" : 5,
-			"revision" : 7,
+			"minor" : 6,
+			"revision" : 5,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 34.0, 99.0, 1402.0, 823.0 ],
+		"rect" : [ 34.0, 99.0, 891.0, 823.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -181,7 +181,7 @@
 					"parameter_enable" : 1,
 					"patching_rect" : [ 1296.0, 37.899995028972626, 66.0, 26.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 685.0, 51.0, 66.0, 26.0 ],
+					"presentation_rect" : [ 685.0, 60.0, 66.0, 26.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_enum" : [ "\"Stop Notes Off\"", "\"Stop Notes On\"" ],
@@ -190,7 +190,8 @@
 							"parameter_linknames" : 1,
 							"parameter_longname" : "Stop Notes",
 							"parameter_mmax" : 1,
-							"parameter_shortname" : "Stop",
+							"parameter_modmode" : 0,
+							"parameter_shortname" : "Stop Notes",
 							"parameter_type" : 2
 						}
 
@@ -308,6 +309,7 @@
 							"parameter_linknames" : 1,
 							"parameter_longname" : "chan2-enable",
 							"parameter_mmax" : 1,
+							"parameter_modmode" : 0,
 							"parameter_shortname" : "chan2",
 							"parameter_type" : 2
 						}
@@ -341,6 +343,7 @@
 							"parameter_linknames" : 1,
 							"parameter_longname" : "chan1-enable",
 							"parameter_mmax" : 1,
+							"parameter_modmode" : 0,
 							"parameter_shortname" : "chan1",
 							"parameter_type" : 2
 						}
@@ -464,16 +467,17 @@
 							"parameter_initial" : [ 1 ],
 							"parameter_initial_enable" : 1,
 							"parameter_linknames" : 1,
-							"parameter_longname" : "Master",
+							"parameter_longname" : "Master Gain",
 							"parameter_mmax" : 1.0,
-							"parameter_shortname" : "Master",
+							"parameter_modmode" : 0,
+							"parameter_shortname" : "Master Gain",
 							"parameter_type" : 0,
 							"parameter_unitstyle" : 1
 						}
 
 					}
 ,
-					"varname" : "Master"
+					"varname" : "Master Gain"
 				}
 
 			}
@@ -533,6 +537,7 @@
 							"parameter_linknames" : 1,
 							"parameter_longname" : "Update All",
 							"parameter_mmax" : 1,
+							"parameter_modmode" : 0,
 							"parameter_shortname" : "Update All",
 							"parameter_type" : 2
 						}
@@ -555,8 +560,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 5,
-							"revision" : 7,
+							"minor" : 6,
+							"revision" : 5,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -903,8 +908,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 5,
-							"revision" : 7,
+							"minor" : 6,
+							"revision" : 5,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -1035,8 +1040,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 5,
-							"revision" : 7,
+							"minor" : 6,
+							"revision" : 5,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -1186,8 +1191,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 5,
-							"revision" : 7,
+							"minor" : 6,
+							"revision" : 5,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -1660,14 +1665,6 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-3", 0 ],
-					"order" : 1,
-					"source" : [ "obj-87", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-36", 0 ],
 					"order" : 0,
 					"source" : [ "obj-87", 0 ]
 				}
@@ -1675,8 +1672,16 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-92", 0 ],
+					"destination" : [ "obj-36", 0 ],
 					"order" : 2,
+					"source" : [ "obj-87", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-92", 0 ],
+					"order" : 1,
 					"source" : [ "obj-87", 0 ]
 				}
 
@@ -1690,17 +1695,16 @@
 			}
  ],
 		"parameters" : 		{
-			"obj-11" : [ "Master", "Master", 0 ],
+			"obj-11" : [ "Master Gain", "Master Gain", 0 ],
 			"obj-14" : [ "chan2-enable", "chan2", 0 ],
-			"obj-27" : [ "Stop Notes", "Stop", 0 ],
+			"obj-27" : [ "Stop Notes", "Stop Notes", 0 ],
 			"obj-36::obj-18" : [ "Filter Enable", "Filter Enable", 0 ],
-			"obj-36::obj-185" : [ "Clip", "Clip", 0 ],
 			"obj-36::obj-22" : [ "Filter Rate", "Filter Rate", 0 ],
 			"obj-36::obj-24" : [ "Filter LFO Range", "Filter LFO Range", 0 ],
 			"obj-36::obj-61" : [ "Filter LFO Retrigger[1]", "Filter LFO Retrigger", 0 ],
 			"obj-36::obj-62" : [ "Filter Mode", "Filter Mode", 0 ],
 			"obj-36::obj-77" : [ "Filter Q", "Filter Q", 0 ],
-			"obj-36::obj-79" : [ "Filter Cut Off", "Filter Cut Off", 0 ],
+			"obj-36::obj-79" : [ "Filter Cut Off", "Filter Freq", 0 ],
 			"obj-3::obj-110" : [ "Gain", "Gain", 0 ],
 			"obj-3::obj-114" : [ "osc-freq[1]", "Osc Freq", 0 ],
 			"obj-3::obj-119" : [ "noise", "Noise", 0 ],
@@ -1710,14 +1714,15 @@
 			"obj-3::obj-144" : [ "Pitch-LFO-Depth", "Pitch LFO Depth", 0 ],
 			"obj-3::obj-172" : [ "Release", "Release", 0 ],
 			"obj-3::obj-173" : [ "Decay", "Decay", 0 ],
-			"obj-3::obj-174" : [ "Attack", "Attack", 0 ],
+			"obj-3::obj-174" : [ "Attack", "Amp Attack", 0 ],
 			"obj-3::obj-175" : [ "Sustain", "Sustain", 0 ],
+			"obj-3::obj-185" : [ "Filter Clip", "Clip", 0 ],
 			"obj-3::obj-32" : [ "pitch-decay", "Pitch Decay", 0 ],
 			"obj-3::obj-47" : [ "pitch-start[1]", "Pitch Start", 0 ],
 			"obj-3::obj-51" : [ "Glide", "Glide", 0 ],
-			"obj-3::obj-53" : [ "LFO-Freq", "Gain LFO Freq", 0 ],
-			"obj-3::obj-55" : [ "LFO-Depth", "Gain LFO Depth", 0 ],
-			"obj-3::obj-78" : [ "Gain LFO Retrigger", "Gain LFO Retrigger", 0 ],
+			"obj-3::obj-53" : [ "LFO-Freq", "Amp LFO Freq", 0 ],
+			"obj-3::obj-55" : [ "LFO-Depth", "Amp LFO Depth", 0 ],
+			"obj-3::obj-78" : [ "Gain LFO Retrigger", "Amp LFO Retrigger", 0 ],
 			"obj-3::obj-84" : [ "Pitch LFO Retrigger", "Pitch LFO Retrigger", 0 ],
 			"obj-6" : [ "chan1-enable", "chan1", 0 ],
 			"obj-87" : [ "Update All", "Update All", 0 ],
@@ -1736,8 +1741,20 @@
 			}
 ,
 			"parameter_overrides" : 			{
+				"obj-36::obj-22" : 				{
+					"parameter_longname" : "Filter Rate"
+				}
+,
 				"obj-36::obj-61" : 				{
 					"parameter_longname" : "Filter LFO Retrigger[1]"
+				}
+,
+				"obj-36::obj-79" : 				{
+					"parameter_longname" : "Filter Cut Off"
+				}
+,
+				"obj-3::obj-110" : 				{
+					"parameter_longname" : "Gain"
 				}
 ,
 				"obj-3::obj-114" : 				{
@@ -1748,8 +1765,24 @@
 					"parameter_longname" : "noise"
 				}
 ,
+				"obj-3::obj-122" : 				{
+					"parameter_longname" : "Oscillator Gain"
+				}
+,
 				"obj-3::obj-123" : 				{
 					"parameter_longname" : "detune"
+				}
+,
+				"obj-3::obj-143" : 				{
+					"parameter_longname" : "Pitch-LFO-Freq"
+				}
+,
+				"obj-3::obj-144" : 				{
+					"parameter_longname" : "Pitch-LFO-Depth"
+				}
+,
+				"obj-3::obj-174" : 				{
+					"parameter_longname" : "Attack"
 				}
 ,
 				"obj-3::obj-32" : 				{
@@ -1760,6 +1793,10 @@
 					"parameter_longname" : "pitch-start[1]"
 				}
 ,
+				"obj-3::obj-51" : 				{
+					"parameter_longname" : "Glide"
+				}
+,
 				"obj-3::obj-53" : 				{
 					"parameter_longname" : "LFO-Freq"
 				}
@@ -1768,8 +1805,20 @@
 					"parameter_longname" : "LFO-Depth"
 				}
 ,
+				"obj-3::obj-78" : 				{
+					"parameter_longname" : "Gain LFO Retrigger"
+				}
+,
+				"obj-3::obj-84" : 				{
+					"parameter_longname" : "Pitch LFO Retrigger"
+				}
+,
 				"obj-92::obj-110" : 				{
 					"parameter_longname" : "Gain[1]"
+				}
+,
+				"obj-92::obj-91" : 				{
+					"parameter_longname" : "Loop Start"
 				}
 ,
 				"obj-92::obj-97" : 				{

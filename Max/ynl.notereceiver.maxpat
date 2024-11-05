@@ -3,14 +3,14 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 8,
-			"minor" : 5,
-			"revision" : 6,
+			"minor" : 6,
+			"revision" : 5,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 769.0, 99.0, 667.0, 823.0 ],
+		"rect" : [ 769.0, 99.0, 367.0, 823.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -89,7 +89,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 215.0, 309.0, 50.0, 22.0 ],
-					"text" : "16"
+					"text" : "2"
 				}
 
 			}
@@ -419,6 +419,7 @@
 							"parameter_linknames" : 1,
 							"parameter_longname" : "chan2-enable",
 							"parameter_mmax" : 1,
+							"parameter_modmode" : 0,
 							"parameter_shortname" : "chan2",
 							"parameter_type" : 2
 						}
@@ -452,6 +453,7 @@
 							"parameter_linknames" : 1,
 							"parameter_longname" : "chan1-enable",
 							"parameter_mmax" : 1,
+							"parameter_modmode" : 0,
 							"parameter_shortname" : "chan1",
 							"parameter_type" : 2
 						}
@@ -494,8 +496,9 @@
 							"parameter_initial_enable" : 1,
 							"parameter_linknames" : 1,
 							"parameter_longname" : "Node",
-							"parameter_mmax" : 8.0,
+							"parameter_mmax" : 16.0,
 							"parameter_mmin" : 1.0,
+							"parameter_modmode" : 0,
 							"parameter_shortname" : "Node",
 							"parameter_type" : 1,
 							"parameter_unitstyle" : 0

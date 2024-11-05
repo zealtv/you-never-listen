@@ -3,14 +3,14 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 8,
-			"minor" : 5,
-			"revision" : 7,
+			"minor" : 6,
+			"revision" : 5,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 34.0, 99.0, 1402.0, 823.0 ],
+		"rect" : [ 34.0, 99.0, 1102.0, 823.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -39,6 +39,86 @@
 		"subpatcher_template" : "",
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-70",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 247.922229253584419, 672.0, 52.0, 22.0 ],
+					"text" : "s #0-out"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-69",
+					"maxclass" : "newobj",
+					"numinlets" : 0,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 247.922229253584419, 562.0, 71.0, 22.0 ],
+					"text" : "r #0-sendall"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-183",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 247.922229253584419, 632.0, 85.0, 22.0 ],
+					"text" : "prepend boost"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-184",
+					"maxclass" : "live.comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 303.922229253584419, 601.0, 58.111101773049995, 18.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 499.027780022885963, 33.166701316833496, 28.055550181203444, 18.0 ],
+					"text" : "Clip",
+					"textjustification" : 0
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"appearance" : 2,
+					"id" : "obj-185",
+					"maxclass" : "live.numbox",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "float" ],
+					"parameter_enable" : 1,
+					"patching_rect" : [ 247.922229253584419, 601.0, 45.0, 15.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 431.499999999999773, 34.666701316833496, 67.0, 15.0 ],
+					"saved_attribute_attributes" : 					{
+						"valueof" : 						{
+							"parameter_initial" : [ 0.0 ],
+							"parameter_initial_enable" : 1,
+							"parameter_linknames" : 1,
+							"parameter_longname" : "Filter Clip",
+							"parameter_mmax" : 1.0,
+							"parameter_modmode" : 0,
+							"parameter_shortname" : "Clip",
+							"parameter_type" : 0,
+							"parameter_unitstyle" : 1
+						}
+
+					}
+,
+					"varname" : "Filter Clip"
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"id" : "obj-82",
 					"maxclass" : "newobj",
@@ -69,8 +149,9 @@
 							"parameter_initial" : [ 0.0 ],
 							"parameter_initial_enable" : 1,
 							"parameter_linknames" : 1,
-							"parameter_longname" : "Pitch LFO Retrigger",
+							"parameter_longname" : "Synth Pitch LFO Retrigger",
 							"parameter_mmax" : 1,
+							"parameter_modmode" : 0,
 							"parameter_shortname" : "Pitch LFO Retrigger",
 							"parameter_type" : 2
 						}
@@ -79,7 +160,7 @@
 ,
 					"text" : "Retrigger",
 					"texton" : "Retrigger",
-					"varname" : "Pitch LFO Retrigger"
+					"varname" : "Synth Pitch LFO Retrigger"
 				}
 
 			}
@@ -114,9 +195,10 @@
 							"parameter_initial" : [ 0.0 ],
 							"parameter_initial_enable" : 1,
 							"parameter_linknames" : 1,
-							"parameter_longname" : "Gain LFO Retrigger",
+							"parameter_longname" : "Synth Amp LFO Retrigger",
 							"parameter_mmax" : 1,
-							"parameter_shortname" : "Gain LFO Retrigger",
+							"parameter_modmode" : 0,
+							"parameter_shortname" : "Amp LFO Retrigger",
 							"parameter_type" : 2
 						}
 
@@ -124,7 +206,7 @@
 ,
 					"text" : "Retrigger",
 					"texton" : "Retrigger",
-					"varname" : "Gain LFO Retrigger"
+					"varname" : "Synth Amp LFO Retrigger"
 				}
 
 			}
@@ -299,8 +381,9 @@
 							"parameter_initial" : [ 0.0 ],
 							"parameter_initial_enable" : 1,
 							"parameter_linknames" : 1,
-							"parameter_longname" : "Pitch-LFO-Freq",
+							"parameter_longname" : "Synth Pitch LFO Frequency",
 							"parameter_mmax" : 20.0,
+							"parameter_modmode" : 0,
 							"parameter_shortname" : "Pitch LFO Freq.",
 							"parameter_type" : 0,
 							"parameter_unitstyle" : 1
@@ -308,7 +391,7 @@
 
 					}
 ,
-					"varname" : "Pitch-LFO-Freq"
+					"varname" : "Synth Pitch LFO Frequency"
 				}
 
 			}
@@ -330,8 +413,9 @@
 							"parameter_initial" : [ 0.0 ],
 							"parameter_initial_enable" : 1,
 							"parameter_linknames" : 1,
-							"parameter_longname" : "Pitch-LFO-Depth",
+							"parameter_longname" : "Synth Pitch LFO Range",
 							"parameter_mmax" : 12.0,
+							"parameter_modmode" : 0,
 							"parameter_shortname" : "Pitch LFO Depth",
 							"parameter_type" : 0,
 							"parameter_unitstyle" : 1
@@ -339,7 +423,7 @@
 
 					}
 ,
-					"varname" : "Pitch-LFO-Depth"
+					"varname" : "Synth Pitch LFO Range"
 				}
 
 			}
@@ -395,8 +479,9 @@
 							"parameter_initial" : [ 0.0 ],
 							"parameter_initial_enable" : 1,
 							"parameter_linknames" : 1,
-							"parameter_longname" : "Oscillator Gain",
+							"parameter_longname" : "Synth Oscillator Gain",
 							"parameter_mmax" : 1.0,
+							"parameter_modmode" : 0,
 							"parameter_shortname" : "Osc Gain",
 							"parameter_type" : 0,
 							"parameter_unitstyle" : 1
@@ -404,7 +489,7 @@
 
 					}
 ,
-					"varname" : "Oscillator Gain"
+					"varname" : "Synth Oscillator Gain"
 				}
 
 			}
@@ -467,6 +552,7 @@
 					"oncolor" : [ 1.0, 0.250980392156863, 0.250980392156863, 1.0 ],
 					"outlettype" : [ "int" ],
 					"parameter_enable" : 0,
+					"parameter_mappable" : 0,
 					"patching_rect" : [ 393.80063593424552, 507.499996662139893, 24.0, 24.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 88.722224964035831, 110.25, 17.611099031236392, 17.611099031236392 ]
@@ -552,8 +638,9 @@
 							"parameter_initial" : [ 0 ],
 							"parameter_initial_enable" : 1,
 							"parameter_linknames" : 1,
-							"parameter_longname" : "Osc Freq",
+							"parameter_longname" : "Synth Osc Freq",
 							"parameter_mmax" : 20000.0,
+							"parameter_modmode" : 0,
 							"parameter_shortname" : "Osc Freq",
 							"parameter_type" : 0,
 							"parameter_unitstyle" : 3
@@ -561,7 +648,7 @@
 
 					}
 ,
-					"varname" : "Osc Freq"
+					"varname" : "Synth Osc Freq"
 				}
 
 			}
@@ -702,8 +789,9 @@
 							"parameter_initial" : [ 0 ],
 							"parameter_initial_enable" : 1,
 							"parameter_linknames" : 1,
-							"parameter_longname" : "Glide",
+							"parameter_longname" : "Synth Pitch Glide",
 							"parameter_mmax" : 1.0,
+							"parameter_modmode" : 0,
 							"parameter_shortname" : "Glide",
 							"parameter_type" : 0,
 							"parameter_unitstyle" : 1
@@ -711,7 +799,7 @@
 
 					}
 ,
-					"varname" : "Glide"
+					"varname" : "Synth Pitch Glide"
 				}
 
 			}
@@ -769,9 +857,10 @@
 							"parameter_initial" : [ 0 ],
 							"parameter_initial_enable" : 1,
 							"parameter_linknames" : 1,
-							"parameter_longname" : "Pitch Start",
+							"parameter_longname" : "Synth Pitch Start",
 							"parameter_mmax" : 48.0,
 							"parameter_mmin" : -48.0,
+							"parameter_modmode" : 0,
 							"parameter_shortname" : "Pitch Start",
 							"parameter_type" : 0,
 							"parameter_unitstyle" : 7
@@ -779,7 +868,7 @@
 
 					}
 ,
-					"varname" : "Pitch Start"
+					"varname" : "Synth Pitch Start"
 				}
 
 			}
@@ -838,8 +927,9 @@
 							"parameter_initial" : [ 0 ],
 							"parameter_initial_enable" : 1,
 							"parameter_linknames" : 1,
-							"parameter_longname" : "Pitch Decay",
+							"parameter_longname" : "Synth Pitch Decay",
 							"parameter_mmax" : 60000.0,
+							"parameter_modmode" : 0,
 							"parameter_shortname" : "Pitch Decay",
 							"parameter_type" : 0,
 							"parameter_unitstyle" : 2
@@ -847,7 +937,7 @@
 
 					}
 ,
-					"varname" : "Pitch Decay"
+					"varname" : "Synth Pitch Decay"
 				}
 
 			}
@@ -1030,16 +1120,17 @@
 							"parameter_initial" : [ 0.0 ],
 							"parameter_initial_enable" : 1,
 							"parameter_linknames" : 1,
-							"parameter_longname" : "Gain LFO Freq",
+							"parameter_longname" : "Synth Amp LFO Frequency",
 							"parameter_mmax" : 20.0,
-							"parameter_shortname" : "Gain LFO Freq",
+							"parameter_modmode" : 0,
+							"parameter_shortname" : "Amp LFO Freq",
 							"parameter_type" : 0,
 							"parameter_unitstyle" : 1
 						}
 
 					}
 ,
-					"varname" : "Gain LFO Freq"
+					"varname" : "Synth Amp LFO Frequency"
 				}
 
 			}
@@ -1060,16 +1151,17 @@
 							"parameter_initial" : [ 0.0 ],
 							"parameter_initial_enable" : 1,
 							"parameter_linknames" : 1,
-							"parameter_longname" : "Gain LFO Depth",
+							"parameter_longname" : "Synth Amp LFO Depth",
 							"parameter_mmax" : 1.0,
-							"parameter_shortname" : "Gain LFO Depth",
+							"parameter_modmode" : 0,
+							"parameter_shortname" : "Amp LFO Depth",
 							"parameter_type" : 0,
 							"parameter_unitstyle" : 1
 						}
 
 					}
 ,
-					"varname" : "Gain LFO Depth"
+					"varname" : "Synth Amp LFO Depth"
 				}
 
 			}
@@ -1140,8 +1232,9 @@
 							"parameter_initial" : [ 1.0 ],
 							"parameter_initial_enable" : 1,
 							"parameter_linknames" : 1,
-							"parameter_longname" : "Gain",
+							"parameter_longname" : "Synth Gain",
 							"parameter_mmax" : 1.0,
+							"parameter_modmode" : 0,
 							"parameter_shortname" : "Gain",
 							"parameter_type" : 0,
 							"parameter_unitstyle" : 1
@@ -1149,7 +1242,7 @@
 
 					}
 ,
-					"varname" : "Gain"
+					"varname" : "Synth Gain"
 				}
 
 			}
@@ -1208,8 +1301,9 @@
 							"parameter_initial" : [ 0.0 ],
 							"parameter_initial_enable" : 1,
 							"parameter_linknames" : 1,
-							"parameter_longname" : "Noise",
+							"parameter_longname" : "Synth Noise Gain",
 							"parameter_mmax" : 1.0,
+							"parameter_modmode" : 0,
 							"parameter_shortname" : "Noise",
 							"parameter_type" : 0,
 							"parameter_unitstyle" : 1
@@ -1217,7 +1311,7 @@
 
 					}
 ,
-					"varname" : "Noise"
+					"varname" : "Synth Noise Gain"
 				}
 
 			}
@@ -1249,9 +1343,10 @@
 							"parameter_initial" : [ 0.0 ],
 							"parameter_initial_enable" : 1,
 							"parameter_linknames" : 1,
-							"parameter_longname" : "Detune",
+							"parameter_longname" : "Synth Detune",
 							"parameter_mmax" : 100.0,
 							"parameter_mmin" : -100.0,
+							"parameter_modmode" : 0,
 							"parameter_shortname" : "Detune",
 							"parameter_type" : 0,
 							"parameter_unitstyle" : 1
@@ -1259,7 +1354,7 @@
 
 					}
 ,
-					"varname" : "Detune"
+					"varname" : "Synth Detune"
 				}
 
 			}
@@ -1620,6 +1715,7 @@
 							"parameter_longname" : "Release",
 							"parameter_mmax" : 60000.0,
 							"parameter_mmin" : 1.0,
+							"parameter_modmode" : 0,
 							"parameter_shortname" : "Release",
 							"parameter_type" : 0,
 							"parameter_unitstyle" : 2
@@ -1627,7 +1723,7 @@
 
 					}
 ,
-					"varname" : "Release"
+					"varname" : "Synth Release"
 				}
 
 			}
@@ -1651,6 +1747,7 @@
 							"parameter_longname" : "Decay",
 							"parameter_mmax" : 60000.0,
 							"parameter_mmin" : 1.0,
+							"parameter_modmode" : 0,
 							"parameter_shortname" : "Decay",
 							"parameter_type" : 0,
 							"parameter_unitstyle" : 2
@@ -1658,7 +1755,7 @@
 
 					}
 ,
-					"varname" : "Decay"
+					"varname" : "Synth Decay"
 				}
 
 			}
@@ -1679,16 +1776,18 @@
 							"parameter_exponent" : 8.0,
 							"parameter_initial" : [ 0 ],
 							"parameter_initial_enable" : 1,
-							"parameter_longname" : "Attack",
+							"parameter_linknames" : 1,
+							"parameter_longname" : "Amp Attack",
 							"parameter_mmax" : 20000.0,
-							"parameter_shortname" : "Attack",
+							"parameter_modmode" : 0,
+							"parameter_shortname" : "Amp Attack",
 							"parameter_type" : 0,
 							"parameter_unitstyle" : 2
 						}
 
 					}
 ,
-					"varname" : "live.numbox[5]"
+					"varname" : "Amp Attack"
 				}
 
 			}
@@ -1710,6 +1809,7 @@
 							"parameter_initial_enable" : 1,
 							"parameter_longname" : "Sustain",
 							"parameter_mmax" : 100.0,
+							"parameter_modmode" : 0,
 							"parameter_shortname" : "Sustain",
 							"parameter_type" : 0,
 							"parameter_unitstyle" : 5
@@ -1717,7 +1817,7 @@
 
 					}
 ,
-					"varname" : "Sustain"
+					"varname" : "Synth Sustain"
 				}
 
 			}
@@ -2140,6 +2240,20 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-70", 0 ],
+					"source" : [ "obj-183", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-183", 0 ],
+					"source" : [ "obj-185", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-59", 0 ],
 					"source" : [ "obj-26", 0 ]
 				}
@@ -2319,6 +2433,13 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-185", 0 ],
+					"source" : [ "obj-69", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-78", 0 ],
 					"source" : [ "obj-74", 0 ]
 				}
@@ -2354,24 +2475,25 @@
 			}
  ],
 		"parameters" : 		{
-			"obj-110" : [ "Gain", "Gain", 0 ],
-			"obj-114" : [ "Osc Freq", "Osc Freq", 0 ],
-			"obj-119" : [ "Noise", "Noise", 0 ],
-			"obj-122" : [ "Oscillator Gain", "Osc Gain", 0 ],
-			"obj-123" : [ "Detune", "Detune", 0 ],
-			"obj-143" : [ "Pitch-LFO-Freq", "Pitch LFO Freq.", 0 ],
-			"obj-144" : [ "Pitch-LFO-Depth", "Pitch LFO Depth", 0 ],
+			"obj-110" : [ "Synth Gain", "Gain", 0 ],
+			"obj-114" : [ "Synth Osc Freq", "Osc Freq", 0 ],
+			"obj-119" : [ "Synth Noise Gain", "Noise", 0 ],
+			"obj-122" : [ "Synth Oscillator Gain", "Osc Gain", 0 ],
+			"obj-123" : [ "Synth Detune", "Detune", 0 ],
+			"obj-143" : [ "Synth Pitch LFO Frequency", "Pitch LFO Freq.", 0 ],
+			"obj-144" : [ "Synth Pitch LFO Range", "Pitch LFO Depth", 0 ],
 			"obj-172" : [ "Release", "Release", 0 ],
 			"obj-173" : [ "Decay", "Decay", 0 ],
-			"obj-174" : [ "Attack", "Attack", 0 ],
+			"obj-174" : [ "Amp Attack", "Amp Attack", 0 ],
 			"obj-175" : [ "Sustain", "Sustain", 0 ],
-			"obj-32" : [ "Pitch Decay", "Pitch Decay", 0 ],
-			"obj-47" : [ "Pitch Start", "Pitch Start", 0 ],
-			"obj-51" : [ "Glide", "Glide", 0 ],
-			"obj-53" : [ "Gain LFO Freq", "Gain LFO Freq", 0 ],
-			"obj-55" : [ "Gain LFO Depth", "Gain LFO Depth", 0 ],
-			"obj-78" : [ "Gain LFO Retrigger", "Gain LFO Retrigger", 0 ],
-			"obj-84" : [ "Pitch LFO Retrigger", "Pitch LFO Retrigger", 0 ],
+			"obj-185" : [ "Filter Clip", "Clip", 0 ],
+			"obj-32" : [ "Synth Pitch Decay", "Pitch Decay", 0 ],
+			"obj-47" : [ "Synth Pitch Start", "Pitch Start", 0 ],
+			"obj-51" : [ "Synth Pitch Glide", "Glide", 0 ],
+			"obj-53" : [ "Synth Amp LFO Frequency", "Amp LFO Freq", 0 ],
+			"obj-55" : [ "Synth Amp LFO Depth", "Amp LFO Depth", 0 ],
+			"obj-78" : [ "Synth Amp LFO Retrigger", "Amp LFO Retrigger", 0 ],
+			"obj-84" : [ "Synth Pitch LFO Retrigger", "Pitch LFO Retrigger", 0 ],
 			"parameterbanks" : 			{
 				"0" : 				{
 					"index" : 0,

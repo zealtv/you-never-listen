@@ -3,14 +3,14 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 8,
-			"minor" : 5,
-			"revision" : 6,
+			"minor" : 6,
+			"revision" : 5,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 170.0, 264.0, 1036.0, 613.0 ],
+		"rect" : [ 170.0, 264.0, 736.0, 613.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -182,6 +182,7 @@
 							"parameter_linknames" : 1,
 							"parameter_longname" : "Sample Start",
 							"parameter_mmax" : 1000.0,
+							"parameter_modmode" : 0,
 							"parameter_shortname" : "Sample Start",
 							"parameter_type" : 0,
 							"parameter_unitstyle" : 1
@@ -236,6 +237,7 @@
 							"parameter_longname" : "Sample ID",
 							"parameter_mmax" : 5.0,
 							"parameter_mmin" : 1.0,
+							"parameter_modmode" : 0,
 							"parameter_shortname" : "Sample ID",
 							"parameter_type" : 1,
 							"parameter_units" : "Voices",
@@ -325,8 +327,9 @@
 							"parameter_initial" : [ 1000 ],
 							"parameter_initial_enable" : 1,
 							"parameter_linknames" : 1,
-							"parameter_longname" : "Loop Duration",
+							"parameter_longname" : "Sample Loop Duration",
 							"parameter_mmax" : 1000.0,
+							"parameter_modmode" : 0,
 							"parameter_shortname" : "Duration",
 							"parameter_type" : 0,
 							"parameter_unitstyle" : 1
@@ -334,7 +337,7 @@
 
 					}
 ,
-					"varname" : "Loop Duration"
+					"varname" : "Sample Loop Duration"
 				}
 
 			}
@@ -392,8 +395,9 @@
 							"parameter_initial" : [ 0.0 ],
 							"parameter_initial_enable" : 1,
 							"parameter_linknames" : 1,
-							"parameter_longname" : "Loop Start",
+							"parameter_longname" : "Sample Loop Start",
 							"parameter_mmax" : 1000.0,
+							"parameter_modmode" : 0,
 							"parameter_shortname" : "Loop Start",
 							"parameter_type" : 0,
 							"parameter_unitstyle" : 1
@@ -401,7 +405,7 @@
 
 					}
 ,
-					"varname" : "Loop Start"
+					"varname" : "Sample Loop Start"
 				}
 
 			}
@@ -499,6 +503,7 @@
 							"parameter_linknames" : 1,
 							"parameter_longname" : "Sample Gain",
 							"parameter_mmax" : 1.0,
+							"parameter_modmode" : 0,
 							"parameter_shortname" : "Sample Gain",
 							"parameter_type" : 0,
 							"parameter_unitstyle" : 1
@@ -739,8 +744,8 @@
 			"obj-103" : [ "Sample ID", "Sample ID", 0 ],
 			"obj-110" : [ "Sample Gain", "Sample Gain", 0 ],
 			"obj-180" : [ "Sample Start", "Sample Start", 0 ],
-			"obj-91" : [ "Loop Start", "Loop Start", 0 ],
-			"obj-97" : [ "Loop Duration", "Duration", 0 ],
+			"obj-91" : [ "Sample Loop Start", "Loop Start", 0 ],
+			"obj-97" : [ "Sample Loop Duration", "Duration", 0 ],
 			"parameterbanks" : 			{
 				"0" : 				{
 					"index" : 0,
