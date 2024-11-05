@@ -928,7 +928,7 @@
 							"parameter_initial_enable" : 1,
 							"parameter_linknames" : 1,
 							"parameter_longname" : "Synth Pitch Decay",
-							"parameter_mmax" : 60000.0,
+							"parameter_mmax" : 120000.0,
 							"parameter_modmode" : 0,
 							"parameter_shortname" : "Pitch Decay",
 							"parameter_type" : 0,
