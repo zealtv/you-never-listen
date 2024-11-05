@@ -3,8 +3,8 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 8,
-			"minor" : 5,
-			"revision" : 6,
+			"minor" : 6,
+			"revision" : 5,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
@@ -70,8 +70,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 210.0, 72.0, 92.0, 22.0 ],
-					"text" : "/lights/scene $1"
+					"patching_rect" : [ 210.0, 72.0, 86.0, 22.0 ],
+					"text" : "/light/scene $1"
 				}
 
 			}
@@ -105,6 +105,7 @@
 							"parameter_initial_enable" : 1,
 							"parameter_linknames" : 1,
 							"parameter_longname" : "Scene",
+							"parameter_modmode" : 0,
 							"parameter_shortname" : "Scene",
 							"parameter_type" : 1,
 							"parameter_unitstyle" : 0
@@ -125,7 +126,7 @@
 					"patching_rect" : [ 41.0, 91.0, 150.0, 20.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 6.0, 120.0, 150.0, 20.0 ],
-					"text" : "/light/go/5 0.00 0.00 0.00",
+					"text" : "/light/scene 0",
 					"textcolor" : [ 0.427450980392157, 0.427450980392157, 0.427450980392157, 1.0 ]
 				}
 
